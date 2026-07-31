@@ -1,0 +1,197 @@
+@import "tailwindcss";
+@custom-variant dark (&.dark);
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+@utility glass {
+  background: color-mix(in oklch, var(--color-background) 72%, transparent);
+  backdrop-filter: blur(12px) saturate(150%);
+}
+
+@utility animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-12deg); }
+  75% { transform: rotate(12deg); }
+}
+
+@utility animate-ping-once {
+  animation: ping-once 0.35s cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes ping-once {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+/* ============================================================
+   NEO-CARTHAGE & LIGHTNING SHADOWS — système de design
+   ============================================================ */
+
+@theme {
+  --color-neo-blue: #0055ff;      /* Sidi Bou Saïd */
+  --color-neo-orange: #ff6b00;    /* Sahara Sunset */
+  --color-neo-gold-1: #e8c568;
+  --color-neo-gold-2: #b8860b;
+  --color-neo-ink: #09090b;       /* Sahara Night */
+  --color-neo-obsidian: #121216;  /* surfaces sombres */
+  --color-neo-linen: #fbfbfa;     /* Morning Dawn */
+  --font-display: var(--font-sans, "Inter", sans-serif);
+}
+
+/* Toucher physique : chaque action cliquable se comprime légèrement */
+@utility tactile {
+  transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 200ms ease;
+  &:active { transform: scale(0.97); }
+}
+
+/* Dégradé or "Carthage brossé" pour les éléments PRO/prestige */
+@utility text-gold-brushed {
+  background: linear-gradient(115deg, var(--color-neo-gold-1) 0%, var(--color-neo-gold-2) 45%, var(--color-neo-gold-1) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility bg-gold-brushed {
+  background: linear-gradient(115deg, var(--color-neo-gold-1) 0%, var(--color-neo-gold-2) 45%, var(--color-neo-gold-1) 100%);
+}
+
+/* Aurore lumineuse au survol des cartes — glow radial caché, révélé au hover */
+@utility card-aurora {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    background: radial-gradient(120px circle at var(--mx, 50%) var(--my, 50%),
+      color-mix(in oklch, var(--color-neo-blue) 35%, transparent), transparent 70%);
+    transition: opacity 400ms ease;
+  }
+  &:hover::before { opacity: 1; }
+}
+
+/* Effet Shimmer doré (bouton CTA XXL) */
+@utility animate-shimmer {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(100deg, transparent 30%, color-mix(in oklch, white 55%, transparent) 50%, transparent 70%);
+    background-size: 250% 100%;
+    animation: shimmer-sweep 3.5s ease-in-out infinite;
+  }
+}
+@keyframes shimmer-sweep {
+  0% { background-position: 200% 0; }
+  60%, 100% { background-position: -50% 0; }
+}
+
+/* Boussole discrète qui tourne au focus de la recherche */
+@utility animate-compass {
+  animation: compass-spin 6s linear infinite;
+}
+@keyframes compass-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Grain cinématographique pour les sections sombres finales */
+@utility bg-grain {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
+
+/* Ondulation vocale (VoiceRecorder premium) */
+@utility animate-voice-wave {
+  animation: voice-wave 1.1s ease-in-out infinite;
+}
+@keyframes voice-wave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+/* Halo respirant du cercle mystique au repos */
+@utility animate-mystic-breathe {
+  animation: mystic-breathe 3.5s ease-in-out infinite;
+}
+@keyframes mystic-breathe {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.08); }
+}
+
+/* Effet "scanner" IA : balayage lumineux violet/bleu sur les champs en cours de réécriture */
+@utility animate-ai-scan {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  overflow: hidden;
+}
+@utility animate-ai-scan {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--color-neo-blue) 12%, transparent), transparent);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a78bfa, var(--color-neo-blue), #a78bfa, transparent);
+    box-shadow: 0 0 12px 2px color-mix(in oklch, var(--color-neo-blue) 70%, transparent);
+    animation: ai-scan-sweep 1.4s ease-in-out infinite;
+  }
+}
+@keyframes ai-scan-sweep {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}

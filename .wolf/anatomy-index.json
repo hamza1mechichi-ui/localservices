@@ -1,0 +1,4064 @@
+{
+  "version": 1,
+  "meta": {
+    "lastScanned": "2026-07-30T18:53:26.757Z",
+    "fileCount": 231,
+    "hits": 0,
+    "misses": 0,
+    "renderedHash": "52d62ca5ba1b8cc38830e677191662d2ab98a4d574ba147e08e3016037fdb97b",
+    "storeUpdatedAt": "2026-07-30T18:53:26.762Z"
+  },
+  "files": {
+    ".claude/commands/reframe.md": {
+      "description": "Mode: migrate [framework]",
+      "tokens": 551,
+      "hash": "17a75695be5d4629",
+      "size": 2221,
+      "mtimeMs": 1784890420257.0964,
+      "updatedAt": "2026-07-30T18:53:26.485Z",
+      "source": "scan"
+    },
+    ".claude/commands/security-audit.md": {
+      "description": "Layer 1 — Dependencies",
+      "tokens": 510,
+      "hash": "e6f7e0b7337c9c86",
+      "size": 2060,
+      "mtimeMs": 1784890420256.0967,
+      "updatedAt": "2026-07-30T18:53:26.486Z",
+      "source": "scan"
+    },
+    ".claude/rules/openwolf.md": {
+      "description": "",
+      "tokens": 328,
+      "hash": "6d735b2c1c54a916",
+      "size": 1323,
+      "mtimeMs": 1784890420203.1936,
+      "updatedAt": "2026-07-30T18:53:26.488Z",
+      "source": "scan"
+    },
+    ".claude/settings.json": {
+      "description": "",
+      "tokens": 514,
+      "hash": "f68759bb50af5ee4",
+      "size": 1799,
+      "mtimeMs": 1784890420200.7454,
+      "updatedAt": "2026-07-30T18:53:26.489Z",
+      "source": "scan"
+    },
+    ".claude/settings.local.json": {
+      "description": "",
+      "tokens": 82,
+      "hash": "c067d517b6206d87",
+      "size": 287,
+      "mtimeMs": 1785423329401.0398,
+      "updatedAt": "2026-07-30T18:53:26.490Z",
+      "source": "scan"
+    },
+    ".gitignore": {
+      "description": "Git ignore rules",
+      "tokens": 135,
+      "hash": "657f0106a59031b3",
+      "size": 503,
+      "mtimeMs": 1783847052000,
+      "updatedAt": "2026-07-30T18:53:26.490Z",
+      "source": "scan"
+    },
+    ".graphify_detect.json": {
+      "description": "",
+      "tokens": 3800,
+      "hash": "d5dd186f16ca98c3",
+      "size": 13299,
+      "mtimeMs": 1785231415004.22,
+      "updatedAt": "2026-07-30T18:53:26.492Z",
+      "source": "scan"
+    },
+    ".graphify_python": {
+      "description": "",
+      "tokens": 18,
+      "hash": "4eb9aee19fa2dffa",
+      "size": 65,
+      "mtimeMs": 1785231179260.779,
+      "updatedAt": "2026-07-30T18:53:26.494Z",
+      "source": "scan"
+    },
+    "AGENTS.md": {
+      "description": "This is NOT the Next.js you know",
+      "tokens": 82,
+      "hash": "e3447d84251880fb",
+      "size": 327,
+      "mtimeMs": 1783846938000,
+      "updatedAt": "2026-07-30T18:53:26.495Z",
+      "source": "scan"
+    },
+    "CLAUDE.md": {
+      "description": "",
+      "tokens": 3,
+      "hash": "336cc4fbf19beaad",
+      "size": 11,
+      "mtimeMs": 1783846938000,
+      "updatedAt": "2026-07-30T18:53:26.495Z",
+      "source": "scan"
+    },
+    "DEPLOY.md": {
+      "description": "Déploiement",
+      "tokens": 108,
+      "hash": "cb6567557d661c0e",
+      "size": 434,
+      "mtimeMs": 1783895188000,
+      "updatedAt": "2026-07-30T18:53:26.496Z",
+      "source": "scan"
+    },
+    "design/specs/otp-flow.md": {
+      "description": "Spécification : Flux d'Authentification à Double Canal (OTP)",
+      "tokens": 1214,
+      "hash": "eaa6b25361c3905e",
+      "size": 5009,
+      "mtimeMs": 1785424480490.0596,
+      "updatedAt": "2026-07-30T18:53:26.497Z",
+      "source": "scan"
+    },
+    "e2e/basic.spec.ts": {
+      "description": "Declares email",
+      "tokens": 850,
+      "hash": "1599e6be32d1925f",
+      "size": 2979,
+      "mtimeMs": 1785424223659.8882,
+      "updatedAt": "2026-07-30T18:53:26.500Z",
+      "source": "scan"
+    },
+    "e2e/otp.spec.ts": {
+      "description": "Parcours OTP de bout en bout.",
+      "tokens": 2106,
+      "hash": "46b7eb43678c1ff8",
+      "size": 7436,
+      "mtimeMs": 1785424213949.9917,
+      "updatedAt": "2026-07-30T18:53:26.502Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "uniquePhone",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 24,
+          "tokens": 67
+        },
+        {
+          "name": "fillProviderForm",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 40,
+          "tokens": 247
+        },
+        {
+          "name": "registerWithPhone",
+          "kind": "fn",
+          "startLine": 41,
+          "endLine": 167,
+          "tokens": 1566
+        }
+      ]
+    },
+    "eslint.config.mjs": {
+      "description": "ESLint flat configuration",
+      "tokens": 124,
+      "hash": "870f1adccecf3051",
+      "size": 465,
+      "mtimeMs": 1783846834000,
+      "updatedAt": "2026-07-30T18:53:26.502Z",
+      "source": "scan"
+    },
+    "New folder/.gitignore": {
+      "description": "Git ignore rules",
+      "tokens": 135,
+      "hash": "657f0106a59031b3",
+      "size": 503,
+      "mtimeMs": 1783847052000,
+      "updatedAt": "2026-07-30T18:53:26.503Z",
+      "source": "scan"
+    },
+    "New folder/AGENTS.md": {
+      "description": "This is NOT the Next.js you know",
+      "tokens": 82,
+      "hash": "e3447d84251880fb",
+      "size": 327,
+      "mtimeMs": 1783846938000,
+      "updatedAt": "2026-07-30T18:53:26.503Z",
+      "source": "scan"
+    },
+    "New folder/CLAUDE.md": {
+      "description": "",
+      "tokens": 3,
+      "hash": "336cc4fbf19beaad",
+      "size": 11,
+      "mtimeMs": 1783846938000,
+      "updatedAt": "2026-07-30T18:53:26.504Z",
+      "source": "scan"
+    },
+    "New folder/DEPLOY.md": {
+      "description": "Déploiement",
+      "tokens": 108,
+      "hash": "cb6567557d661c0e",
+      "size": 434,
+      "mtimeMs": 1783895188000,
+      "updatedAt": "2026-07-30T18:53:26.505Z",
+      "source": "scan"
+    },
+    "New folder/e2e/basic.spec.ts": {
+      "description": "Declares email",
+      "tokens": 806,
+      "hash": "e17fd76bc3d3d0c0",
+      "size": 2822,
+      "mtimeMs": 1784237368000,
+      "updatedAt": "2026-07-30T18:53:26.506Z",
+      "source": "scan"
+    },
+    "New folder/eslint.config.mjs": {
+      "description": "ESLint flat configuration",
+      "tokens": 124,
+      "hash": "870f1adccecf3051",
+      "size": 465,
+      "mtimeMs": 1783846834000,
+      "updatedAt": "2026-07-30T18:53:26.507Z",
+      "source": "scan"
+    },
+    "New folder/next-env.d.ts": {
+      "description": "/ <reference types=\"next\" />",
+      "tokens": 71,
+      "hash": "7b550dda9686c16f",
+      "size": 247,
+      "mtimeMs": 1784759880000,
+      "updatedAt": "2026-07-30T18:53:26.508Z",
+      "source": "scan"
+    },
+    "New folder/next.config.ts": {
+      "description": "Next.js configuration",
+      "tokens": 40,
+      "hash": "6db3e638fd7a8dc3",
+      "size": 140,
+      "mtimeMs": 1783847296000,
+      "updatedAt": "2026-07-30T18:53:26.509Z",
+      "source": "scan"
+    },
+    "New folder/package-lock.json": {
+      "description": "npm lock file",
+      "tokens": 105305,
+      "hash": "6828a3cb118286db",
+      "size": 368565,
+      "mtimeMs": 1784522736000,
+      "updatedAt": "2026-07-30T18:53:26.512Z",
+      "source": "scan"
+    },
+    "New folder/package.json": {
+      "description": "Node.js package manifest",
+      "tokens": 437,
+      "hash": "f45fb9d55a8a97fd",
+      "size": 1529,
+      "mtimeMs": 1784522736000,
+      "updatedAt": "2026-07-30T18:53:26.513Z",
+      "source": "scan"
+    },
+    "New folder/playwright.config.ts": {
+      "description": "Playwright test configuration",
+      "tokens": 143,
+      "hash": "1513a1bec3aedcac",
+      "size": 498,
+      "mtimeMs": 1783975052000,
+      "updatedAt": "2026-07-30T18:53:26.514Z",
+      "source": "scan"
+    },
+    "New folder/postcss.config.mjs": {
+      "description": "Declares config",
+      "tokens": 26,
+      "hash": "dfac7ac2d86d326a",
+      "size": 94,
+      "mtimeMs": 1783846834000,
+      "updatedAt": "2026-07-30T18:53:26.514Z",
+      "source": "scan"
+    },
+    "New folder/prisma/migrations/20260712100450_init/migration.sql": {
+      "description": "CreateTable",
+      "tokens": 1013,
+      "hash": "1ed3438c8a9a46e6",
+      "size": 3543,
+      "mtimeMs": 1783847090000,
+      "updatedAt": "2026-07-30T18:53:26.515Z",
+      "source": "scan"
+    },
+    "New folder/prisma/migrations/20260712232050_add_reviews_notifications/migration.sql": {
+      "description": "AlterTable",
+      "tokens": 610,
+      "hash": "908bd93d64a5fede",
+      "size": 2133,
+      "mtimeMs": 1783894850000,
+      "updatedAt": "2026-07-30T18:53:26.517Z",
+      "source": "scan"
+    },
+    "New folder/prisma/migrations/migration_lock.toml": {
+      "description": "Please do not edit this file manually",
+      "tokens": 36,
+      "hash": "3389dbaf2a3cf4b4",
+      "size": 124,
+      "mtimeMs": 1783894850000,
+      "updatedAt": "2026-07-30T18:53:26.517Z",
+      "source": "scan"
+    },
+    "New folder/prisma/schema.prisma": {
+      "description": "Prisma database schema",
+      "tokens": 1764,
+      "hash": "4a8e254bb0386c6d",
+      "size": 6615,
+      "mtimeMs": 1784740648000,
+      "updatedAt": "2026-07-30T18:53:26.518Z",
+      "source": "scan"
+    },
+    "New folder/prisma/seed.ts": {
+      "description": "adapter: main",
+      "tokens": 687,
+      "hash": "3bc0d5ece989f02b",
+      "size": 2402,
+      "mtimeMs": 1783927544000,
+      "updatedAt": "2026-07-30T18:53:26.519Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 87,
+          "tokens": 601
+        }
+      ]
+    },
+    "New folder/prisma.config.ts": {
+      "description": "This file was generated by Prisma, and assumes you have installed the following:",
+      "tokens": 107,
+      "hash": "c1bcbd0ff267c8b6",
+      "size": 374,
+      "mtimeMs": 1783847052000,
+      "updatedAt": "2026-07-30T18:53:26.520Z",
+      "source": "scan"
+    },
+    "New folder/public/offline.html": {
+      "description": "Hors ligne — LocalServices",
+      "tokens": 311,
+      "hash": "8b3271e17b56a0ac",
+      "size": 1177,
+      "mtimeMs": 1784094638000,
+      "updatedAt": "2026-07-30T18:53:26.521Z",
+      "source": "scan"
+    },
+    "New folder/public/sw.js": {
+      "description": "Declares STATIC_CACHE",
+      "tokens": 753,
+      "hash": "85bbc0f4ed0680ca",
+      "size": 2645,
+      "mtimeMs": 1784094650000,
+      "updatedAt": "2026-07-30T18:53:26.522Z",
+      "source": "scan"
+    },
+    "New folder/README.md": {
+      "description": "Project documentation",
+      "tokens": 2893,
+      "hash": "960a3591846f1d3c",
+      "size": 15178,
+      "mtimeMs": 1783980866000,
+      "updatedAt": "2026-07-30T18:53:26.524Z",
+      "source": "scan"
+    },
+    "New folder/src/__tests__/geo.test.ts": {
+      "description": "Declares dist",
+      "tokens": 423,
+      "hash": "be2d75598259f687",
+      "size": 1484,
+      "mtimeMs": 1783975060000,
+      "updatedAt": "2026-07-30T18:53:26.525Z",
+      "source": "scan"
+    },
+    "New folder/src/__tests__/setup.test.ts": {
+      "description": "",
+      "tokens": 46,
+      "hash": "6f9d5d1fdffa15be",
+      "size": 159,
+      "mtimeMs": 1783975062000,
+      "updatedAt": "2026-07-30T18:53:26.526Z",
+      "source": "scan"
+    },
+    "New folder/src/__tests__/setup.ts": {
+      "description": "",
+      "tokens": 13,
+      "hash": "9b328c4843431fa7",
+      "size": 43,
+      "mtimeMs": 1783975046000,
+      "updatedAt": "2026-07-30T18:53:26.526Z",
+      "source": "scan"
+    },
+    "New folder/src/__tests__/utils.test.ts": {
+      "description": "",
+      "tokens": 141,
+      "hash": "f0171a4232786d8a",
+      "size": 495,
+      "mtimeMs": 1783975062000,
+      "updatedAt": "2026-07-30T18:53:26.527Z",
+      "source": "scan"
+    },
+    "New folder/src/app/admin/layout.tsx": {
+      "description": "metadata",
+      "tokens": 93,
+      "hash": "51cc7ce01e0bcfe4",
+      "size": 327,
+      "mtimeMs": 1783974944000,
+      "updatedAt": "2026-07-30T18:53:26.529Z",
+      "source": "scan"
+    },
+    "New folder/src/app/admin/page.tsx": {
+      "description": "AdminDashboard — renders form, table — uses useState, useEffect",
+      "tokens": 4100,
+      "hash": "1d1aa3260dfc41fb",
+      "size": 14354,
+      "mtimeMs": 1784697696000,
+      "updatedAt": "2026-07-30T18:53:26.531Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AdminDashboard",
+          "kind": "fn",
+          "startLine": 22,
+          "endLine": 286,
+          "tokens": 3737
+        },
+        {
+          "name": "StatCard",
+          "kind": "fn",
+          "startLine": 287,
+          "endLine": 302,
+          "tokens": 187
+        }
+      ]
+    },
+    "New folder/src/app/api/auth/[...nextauth]/route.ts": {
+      "description": "Next.js API route",
+      "tokens": 33,
+      "hash": "3eb83a8f3ddf59db",
+      "size": 115,
+      "mtimeMs": 1784181474000,
+      "updatedAt": "2026-07-30T18:53:26.533Z",
+      "source": "scan"
+    },
+    "New folder/src/app/api/cron/reset-tokens/route.ts": {
+      "description": "Next.js API route: POST",
+      "tokens": 381,
+      "hash": "470c5712adf90860",
+      "size": 1339,
+      "mtimeMs": 1784522838000,
+      "updatedAt": "2026-07-30T18:53:26.535Z",
+      "source": "scan"
+    },
+    "New folder/src/app/api/upload/route.ts": {
+      "description": "Next.js API route: POST",
+      "tokens": 546,
+      "hash": "c317d407cce09fd3",
+      "size": 1917,
+      "mtimeMs": 1784522802000,
+      "updatedAt": "2026-07-30T18:53:26.536Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "POST",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 62,
+          "tokens": 413
+        }
+      ]
+    },
+    "New folder/src/app/connexion/page.tsx": {
+      "description": "metadata",
+      "tokens": 397,
+      "hash": "b3f1e82b23fbd425",
+      "size": 1389,
+      "mtimeMs": 1783977624000,
+      "updatedAt": "2026-07-30T18:53:26.537Z",
+      "source": "scan"
+    },
+    "New folder/src/app/dashboard/client/page.tsx": {
+      "description": "ClientDashboard — uses useState, useEffect",
+      "tokens": 9295,
+      "hash": "185a572d5c0546c1",
+      "size": 32536,
+      "mtimeMs": 1784697718000,
+      "updatedAt": "2026-07-30T18:53:26.539Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ServiceRequest",
+          "kind": "section",
+          "startLine": 28,
+          "endLine": 51,
+          "tokens": 130
+        },
+        {
+          "name": "ClientDashboard",
+          "kind": "fn",
+          "startLine": 52,
+          "endLine": 640,
+          "tokens": 8751
+        }
+      ]
+    },
+    "New folder/src/app/dashboard/layout.tsx": {
+      "description": "metadata",
+      "tokens": 91,
+      "hash": "9bd29a1bfc531ab0",
+      "size": 318,
+      "mtimeMs": 1783974900000,
+      "updatedAt": "2026-07-30T18:53:26.539Z",
+      "source": "scan"
+    },
+    "New folder/src/app/dashboard/prestataire/page.tsx": {
+      "description": "PrestataireDashboard — uses useState, useEffect",
+      "tokens": 7088,
+      "hash": "e2beeaab0ec6b8e0",
+      "size": 24814,
+      "mtimeMs": 1784740696000,
+      "updatedAt": "2026-07-30T18:53:26.542Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ServiceRequest",
+          "kind": "section",
+          "startLine": 29,
+          "endLine": 43,
+          "tokens": 93
+        },
+        {
+          "name": "ProviderProfile",
+          "kind": "section",
+          "startLine": 44,
+          "endLine": 55,
+          "tokens": 67
+        },
+        {
+          "name": "Offer",
+          "kind": "section",
+          "startLine": 56,
+          "endLine": 71,
+          "tokens": 73
+        },
+        {
+          "name": "Review",
+          "kind": "section",
+          "startLine": 72,
+          "endLine": 80,
+          "tokens": 52
+        },
+        {
+          "name": "PrestataireDashboard",
+          "kind": "fn",
+          "startLine": 81,
+          "endLine": 586,
+          "tokens": 6502
+        }
+      ]
+    },
+    "New folder/src/app/globals.css": {
+      "description": "Styles: 26 rules, 17 vars, 7 animations",
+      "tokens": 1631,
+      "hash": "31b5cf637eec7329",
+      "size": 5729,
+      "mtimeMs": 1784610074000,
+      "updatedAt": "2026-07-30T18:53:26.544Z",
+      "source": "scan"
+    },
+    "New folder/src/app/inscription/page.tsx": {
+      "description": "metadata",
+      "tokens": 408,
+      "hash": "f6dcce316332d34c",
+      "size": 1428,
+      "mtimeMs": 1783977626000,
+      "updatedAt": "2026-07-30T18:53:26.544Z",
+      "source": "scan"
+    },
+    "New folder/src/app/layout.tsx": {
+      "description": "inter",
+      "tokens": 449,
+      "hash": "054df877d1f22ba2",
+      "size": 1570,
+      "mtimeMs": 1784759920000,
+      "updatedAt": "2026-07-30T18:53:26.545Z",
+      "source": "scan"
+    },
+    "New folder/src/app/manifest.ts": {
+      "description": "Exports manifest",
+      "tokens": 167,
+      "hash": "01b1c041d0c179db",
+      "size": 582,
+      "mtimeMs": 1783974686000,
+      "updatedAt": "2026-07-30T18:53:26.546Z",
+      "source": "scan"
+    },
+    "New folder/src/app/page.tsx": {
+      "description": "getStats — renders form",
+      "tokens": 3972,
+      "hash": "d0fe86e671ff3cb2",
+      "size": 13970,
+      "mtimeMs": 1784627926000,
+      "updatedAt": "2026-07-30T18:53:26.548Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getStats",
+          "kind": "fn",
+          "startLine": 10,
+          "endLine": 18,
+          "tokens": 75
+        },
+        {
+          "name": "getFeaturedProviders",
+          "kind": "fn",
+          "startLine": 19,
+          "endLine": 37,
+          "tokens": 192
+        },
+        {
+          "name": "getTestimonials",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 50,
+          "tokens": 96
+        },
+        {
+          "name": "HomePage",
+          "kind": "fn",
+          "startLine": 51,
+          "endLine": 280,
+          "tokens": 3497
+        }
+      ]
+    },
+    "New folder/src/app/prestataires/[id]/page.tsx": {
+      "description": "dynamic — renders map",
+      "tokens": 2410,
+      "hash": "7d592698ae918410",
+      "size": 8443,
+      "mtimeMs": 1784697234000,
+      "updatedAt": "2026-07-30T18:53:26.550Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "generateMetadata",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 22,
+          "tokens": 176
+        },
+        {
+          "name": "ProviderProfilePage",
+          "kind": "fn",
+          "startLine": 23,
+          "endLine": 171,
+          "tokens": 2098
+        }
+      ]
+    },
+    "New folder/src/app/prestataires/layout.tsx": {
+      "description": "metadata",
+      "tokens": 104,
+      "hash": "506806e7181060db",
+      "size": 366,
+      "mtimeMs": 1783974944000,
+      "updatedAt": "2026-07-30T18:53:26.551Z",
+      "source": "scan"
+    },
+    "New folder/src/app/prestataires/page.tsx": {
+      "description": "PrestatairesPage — renders map — uses useState, useEffect",
+      "tokens": 1750,
+      "hash": "b5e4df97ab02b960",
+      "size": 6129,
+      "mtimeMs": 1784072870000,
+      "updatedAt": "2026-07-30T18:53:26.552Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Provider",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 24,
+          "tokens": 71
+        },
+        {
+          "name": "PrestatairesPage",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 146,
+          "tokens": 1545
+        }
+      ]
+    },
+    "New folder/src/app/robots.ts": {
+      "description": "Exports robots",
+      "tokens": 84,
+      "hash": "39efd657c2671cd6",
+      "size": 292,
+      "mtimeMs": 1783974864000,
+      "updatedAt": "2026-07-30T18:53:26.553Z",
+      "source": "scan"
+    },
+    "New folder/src/app/sitemap.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 279,
+      "hash": "0014d90ebaede7a8",
+      "size": 976,
+      "mtimeMs": 1783974864000,
+      "updatedAt": "2026-07-30T18:53:26.554Z",
+      "source": "scan"
+    },
+    "New folder/src/auth.ts": {
+      "description": "Declares NextAuthConfig",
+      "tokens": 454,
+      "hash": "e80c21dba66b6d7f",
+      "size": 1586,
+      "mtimeMs": 1784007632000,
+      "updatedAt": "2026-07-30T18:53:26.555Z",
+      "source": "scan"
+    },
+    "New folder/src/components/AccountSettingsForm.tsx": {
+      "description": "AccountSettingsForm — renders form — uses useState",
+      "tokens": 937,
+      "hash": "720e3f612540eefc",
+      "size": 3278,
+      "mtimeMs": 1783977692000,
+      "updatedAt": "2026-07-30T18:53:26.556Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AccountSettingsForm",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 75,
+          "tokens": 879
+        }
+      ]
+    },
+    "New folder/src/components/AdModal.tsx": {
+      "description": "STORAGE_KEY — uses useState, useEffect",
+      "tokens": 804,
+      "hash": "1befbe6bc919afa3",
+      "size": 2821,
+      "mtimeMs": 1784523064000,
+      "updatedAt": "2026-07-30T18:53:26.556Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AdModal",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 81,
+          "tokens": 725
+        }
+      ]
+    },
+    "New folder/src/components/AiAssistantButton.tsx": {
+      "description": "Récupère les mots-clés actuels du formulaire (ex: contenu du champ titre)",
+      "tokens": 556,
+      "hash": "43c81356617ff178",
+      "size": 1948,
+      "mtimeMs": 1784523050000,
+      "updatedAt": "2026-07-30T18:53:26.557Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AiAssistantButton",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 55,
+          "tokens": 486
+        }
+      ]
+    },
+    "New folder/src/components/AuthProvider.tsx": {
+      "description": "AuthProvider",
+      "tokens": 88,
+      "hash": "2a1de381020d62d5",
+      "size": 305,
+      "mtimeMs": 1784179742000,
+      "updatedAt": "2026-07-30T18:53:26.558Z",
+      "source": "scan"
+    },
+    "New folder/src/components/ConversationsList.tsx": {
+      "description": "ConversationsList — uses useState, useCallback, useEffect",
+      "tokens": 990,
+      "hash": "6f292ab45b07c3a7",
+      "size": 3465,
+      "mtimeMs": 1784495752000,
+      "updatedAt": "2026-07-30T18:53:26.560Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Conversation",
+          "kind": "section",
+          "startLine": 11,
+          "endLine": 20,
+          "tokens": 97
+        },
+        {
+          "name": "ConversationsList",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 102,
+          "tokens": 791
+        }
+      ]
+    },
+    "New folder/src/components/ConversationView.tsx": {
+      "description": "ConversationView — renders form — uses useState, useEffect",
+      "tokens": 1348,
+      "hash": "794d53931b97a8af",
+      "size": 4717,
+      "mtimeMs": 1784495760000,
+      "updatedAt": "2026-07-30T18:53:26.561Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Message",
+          "kind": "section",
+          "startLine": 9,
+          "endLine": 17,
+          "tokens": 47
+        },
+        {
+          "name": "ConversationData",
+          "kind": "section",
+          "startLine": 18,
+          "endLine": 26,
+          "tokens": 52
+        },
+        {
+          "name": "ConversationView",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 131,
+          "tokens": 1169
+        }
+      ]
+    },
+    "New folder/src/components/CreativeAdModal.tsx": {
+      "description": "STORAGE_KEY — uses useState, useEffect",
+      "tokens": 1280,
+      "hash": "839ad3d8d1826e8e",
+      "size": 4497,
+      "mtimeMs": 1784627900000,
+      "updatedAt": "2026-07-30T18:53:26.562Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "CreativeAdModal",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 111,
+          "tokens": 1200
+        }
+      ]
+    },
+    "New folder/src/components/EditProfileForm.tsx": {
+      "description": "EditProfileForm — renders form — uses useState",
+      "tokens": 1283,
+      "hash": "705464b12db95b90",
+      "size": 4492,
+      "mtimeMs": 1785145950819.0308,
+      "updatedAt": "2026-07-30T18:53:26.563Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ProfileFormProps",
+          "kind": "section",
+          "startLine": 10,
+          "endLine": 20,
+          "tokens": 58
+        },
+        {
+          "name": "EditProfileForm",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 139,
+          "tokens": 1138
+        }
+      ]
+    },
+    "New folder/src/components/FavoriteButton.tsx": {
+      "description": "FavoriteButton — uses useState",
+      "tokens": 402,
+      "hash": "a004e04af741dbca",
+      "size": 1407,
+      "mtimeMs": 1784072810000,
+      "updatedAt": "2026-07-30T18:53:26.564Z",
+      "source": "scan"
+    },
+    "New folder/src/components/LangSwitcher.tsx": {
+      "description": "LangSwitcher",
+      "tokens": 199,
+      "hash": "83b504c4fe3d4d06",
+      "size": 694,
+      "mtimeMs": 1783977562000,
+      "updatedAt": "2026-07-30T18:53:26.565Z",
+      "source": "scan"
+    },
+    "New folder/src/components/LanguageProvider.tsx": {
+      "description": "LangContext — uses useCallback, useEffect, useContext",
+      "tokens": 293,
+      "hash": "073ff1e2d81a5b65",
+      "size": 1023,
+      "mtimeMs": 1783977560000,
+      "updatedAt": "2026-07-30T18:53:26.566Z",
+      "source": "scan"
+    },
+    "New folder/src/components/LocationMap.tsx": {
+      "description": "iconUrl — uses useEffect",
+      "tokens": 374,
+      "hash": "044a1af6c047d8ac",
+      "size": 1306,
+      "mtimeMs": 1784007548000,
+      "updatedAt": "2026-07-30T18:53:26.567Z",
+      "source": "scan"
+    },
+    "New folder/src/components/LocationPicker.tsx": {
+      "description": "useDebouncedValue — renders map — uses useState, useEffect",
+      "tokens": 1817,
+      "hash": "ee848f142371b4d7",
+      "size": 6362,
+      "mtimeMs": 1784094494000,
+      "updatedAt": "2026-07-30T18:53:26.568Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "LocationResult",
+          "kind": "section",
+          "startLine": 8,
+          "endLine": 13,
+          "tokens": 24
+        },
+        {
+          "name": "useDebouncedValue",
+          "kind": "fn",
+          "startLine": 14,
+          "endLine": 23,
+          "tokens": 108
+        },
+        {
+          "name": "dedupeByProximity",
+          "kind": "fn",
+          "startLine": 24,
+          "endLine": 33,
+          "tokens": 81
+        },
+        {
+          "name": "LocationPicker",
+          "kind": "fn",
+          "startLine": 34,
+          "endLine": 172,
+          "tokens": 1544
+        }
+      ]
+    },
+    "New folder/src/components/LoginForm.tsx": {
+      "description": "LoginForm — renders form — uses useRouter, useState",
+      "tokens": 790,
+      "hash": "fd96088b47b745c9",
+      "size": 2792,
+      "mtimeMs": 1784236872000,
+      "updatedAt": "2026-07-30T18:53:26.569Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "LoginForm",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 84,
+          "tokens": 722
+        }
+      ]
+    },
+    "New folder/src/components/Navbar.tsx": {
+      "description": "Navbar — uses useState",
+      "tokens": 1923,
+      "hash": "b3a0ea1b9d193285",
+      "size": 6731,
+      "mtimeMs": 1784697278000,
+      "updatedAt": "2026-07-30T18:53:26.569Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Navbar",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 164,
+          "tokens": 1806
+        }
+      ]
+    },
+    "New folder/src/components/NotificationBell.tsx": {
+      "description": "NotificationBell — uses useState, useCallback, useEffect",
+      "tokens": 1394,
+      "hash": "7bd506b9c4e2f740",
+      "size": 4878,
+      "mtimeMs": 1784072930000,
+      "updatedAt": "2026-07-30T18:53:26.571Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Notification",
+          "kind": "section",
+          "startLine": 16,
+          "endLine": 24,
+          "tokens": 42
+        },
+        {
+          "name": "NotificationBell",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 138,
+          "tokens": 1231
+        }
+      ]
+    },
+    "New folder/src/components/OfferStepper.tsx": {
+      "description": "STEPS",
+      "tokens": 596,
+      "hash": "e0c913261f8bc83e",
+      "size": 2086,
+      "mtimeMs": 1784740362000,
+      "updatedAt": "2026-07-30T18:53:26.572Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "OfferStepper",
+          "kind": "fn",
+          "startLine": 3,
+          "endLine": 55,
+          "tokens": 578
+        }
+      ]
+    },
+    "New folder/src/components/ProviderCard.tsx": {
+      "description": "ProviderCard — renders map",
+      "tokens": 840,
+      "hash": "d15b9fb91740abff",
+      "size": 2943,
+      "mtimeMs": 1784697160000,
+      "updatedAt": "2026-07-30T18:53:26.573Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ProviderCardData",
+          "kind": "section",
+          "startLine": 6,
+          "endLine": 17,
+          "tokens": 69
+        },
+        {
+          "name": "ProviderCard",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 84,
+          "tokens": 718
+        }
+      ]
+    },
+    "New folder/src/components/ProviderMap.tsx": {
+      "description": "LocationMap",
+      "tokens": 176,
+      "hash": "6a865c3a1015dc13",
+      "size": 616,
+      "mtimeMs": 1784094436000,
+      "updatedAt": "2026-07-30T18:53:26.574Z",
+      "source": "scan"
+    },
+    "New folder/src/components/PwaRegister.tsx": {
+      "description": "PwaRegister — uses useEffect",
+      "tokens": 271,
+      "hash": "bfa19ccf1007a84b",
+      "size": 954,
+      "mtimeMs": 1784151460000,
+      "updatedAt": "2026-07-30T18:53:26.574Z",
+      "source": "scan"
+    },
+    "New folder/src/components/RegisterForm.tsx": {
+      "description": "RegisterForm — renders form — uses useRouter, useState",
+      "tokens": 1844,
+      "hash": "98b5ed2923474295",
+      "size": 6475,
+      "mtimeMs": 1784236920000,
+      "updatedAt": "2026-07-30T18:53:26.575Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "RegisterForm",
+          "kind": "fn",
+          "startLine": 12,
+          "endLine": 194,
+          "tokens": 1733
+        }
+      ]
+    },
+    "New folder/src/components/RequestStepper.tsx": {
+      "description": "STEPS",
+      "tokens": 485,
+      "hash": "3520c159c888f6e0",
+      "size": 1699,
+      "mtimeMs": 1784740362000,
+      "updatedAt": "2026-07-30T18:53:26.576Z",
+      "source": "scan"
+    },
+    "New folder/src/components/ReviewForm.tsx": {
+      "description": "ReviewForm — renders form — uses useState",
+      "tokens": 815,
+      "hash": "126afd49db41223d",
+      "size": 2856,
+      "mtimeMs": 1784072818000,
+      "updatedAt": "2026-07-30T18:53:26.578Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ReviewFormProps",
+          "kind": "section",
+          "startLine": 8,
+          "endLine": 12,
+          "tokens": 21
+        },
+        {
+          "name": "ReviewForm",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 79,
+          "tokens": 570
+        },
+        {
+          "name": "StarsDisplay",
+          "kind": "fn",
+          "startLine": 80,
+          "endLine": 99,
+          "tokens": 170
+        }
+      ]
+    },
+    "New folder/src/components/ThemeProvider.tsx": {
+      "description": "ThemeContext — uses useEffect, useContext",
+      "tokens": 433,
+      "hash": "8e93d119d9f68f7e",
+      "size": 1513,
+      "mtimeMs": 1784007512000,
+      "updatedAt": "2026-07-30T18:53:26.578Z",
+      "source": "scan"
+    },
+    "New folder/src/components/ThemeToggle.tsx": {
+      "description": "ThemeToggle",
+      "tokens": 181,
+      "hash": "9d8672e7b9309395",
+      "size": 631,
+      "mtimeMs": 1783977720000,
+      "updatedAt": "2026-07-30T18:53:26.579Z",
+      "source": "scan"
+    },
+    "New folder/src/components/VoiceAndAiPremium.tsx": {
+      "description": "formatDuration — uses useState, useCallback, useEffect",
+      "tokens": 2997,
+      "hash": "97e356a2d7d8045b",
+      "size": 10504,
+      "mtimeMs": 1784610404000,
+      "updatedAt": "2026-07-30T18:53:26.580Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "formatDuration",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 18,
+          "tokens": 122
+        },
+        {
+          "name": "AiScanOverlay",
+          "kind": "fn",
+          "startLine": 19,
+          "endLine": 31,
+          "tokens": 142
+        },
+        {
+          "name": "AiMagicSwitch",
+          "kind": "fn",
+          "startLine": 32,
+          "endLine": 102,
+          "tokens": 668
+        },
+        {
+          "name": "MysticVoiceRecorder",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 278,
+          "tokens": 1977
+        }
+      ]
+    },
+    "New folder/src/components/VoiceRecorder.tsx": {
+      "description": "formatDuration — uses useState, useCallback, useEffect",
+      "tokens": 1837,
+      "hash": "3feecaf705a666c8",
+      "size": 6427,
+      "mtimeMs": 1784523040000,
+      "updatedAt": "2026-07-30T18:53:26.581Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "formatDuration",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 13,
+          "tokens": 46
+        },
+        {
+          "name": "VoiceRecorder",
+          "kind": "fn",
+          "startLine": 14,
+          "endLine": 195,
+          "tokens": 1721
+        }
+      ]
+    },
+    "New folder/src/lib/action-result.ts": {
+      "description": "Exports ActionResult, ok, fail",
+      "tokens": 85,
+      "hash": "8ee4d08f06408775",
+      "size": 297,
+      "mtimeMs": 1784071412000,
+      "updatedAt": "2026-07-30T18:53:26.582Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/actions/account.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 404,
+      "hash": "cdb77b2cf49d7a45",
+      "size": 1418,
+      "mtimeMs": 1783922684000,
+      "updatedAt": "2026-07-30T18:53:26.584Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/actions/admin.ts": {
+      "description": "API routes: GET (1 endpoints)",
+      "tokens": 1251,
+      "hash": "48b49ece1e50f68c",
+      "size": 4390,
+      "mtimeMs": 1784094764000,
+      "updatedAt": "2026-07-30T18:53:26.586Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getCategories",
+          "kind": "fn",
+          "startLine": 10,
+          "endLine": 17,
+          "tokens": 65
+        },
+        {
+          "name": "createCategory",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 35,
+          "tokens": 185
+        },
+        {
+          "name": "deleteCategory",
+          "kind": "fn",
+          "startLine": 36,
+          "endLine": 49,
+          "tokens": 104
+        },
+        {
+          "name": "getAllReviews",
+          "kind": "fn",
+          "startLine": 50,
+          "endLine": 69,
+          "tokens": 124
+        },
+        {
+          "name": "hideReview",
+          "kind": "fn",
+          "startLine": 70,
+          "endLine": 84,
+          "tokens": 100
+        },
+        {
+          "name": "deleteReview",
+          "kind": "fn",
+          "startLine": 85,
+          "endLine": 98,
+          "tokens": 99
+        },
+        {
+          "name": "getAdvancedStats",
+          "kind": "fn",
+          "startLine": 99,
+          "endLine": 167,
+          "tokens": 513
+        }
+      ]
+    },
+    "New folder/src/lib/actions/ai.ts": {
+      "description": "Génère un titre + une description professionnels à partir de quelques",
+      "tokens": 813,
+      "hash": "797365b55e4b4dcb",
+      "size": 2873,
+      "mtimeMs": 1784522758000,
+      "updatedAt": "2026-07-30T18:53:26.587Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AiSuggestion",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 25,
+          "tokens": 124
+        },
+        {
+          "name": "generateRequestText",
+          "kind": "fn",
+          "startLine": 26,
+          "endLine": 77,
+          "tokens": 580
+        }
+      ]
+    },
+    "New folder/src/lib/actions/auth.ts": {
+      "description": "API routes: GET (9 endpoints)",
+      "tokens": 732,
+      "hash": "262616501d40c81d",
+      "size": 2574,
+      "mtimeMs": 1784237154000,
+      "updatedAt": "2026-07-30T18:53:26.588Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "register",
+          "kind": "fn",
+          "startLine": 22,
+          "endLine": 77,
+          "tokens": 481
+        }
+      ]
+    },
+    "New folder/src/lib/actions/favorites.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 618,
+      "hash": "530026a79399dc4f",
+      "size": 2164,
+      "mtimeMs": 1784071428000,
+      "updatedAt": "2026-07-30T18:53:26.589Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "toggleFavorite",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 32,
+          "tokens": 233
+        },
+        {
+          "name": "getMyFavorites",
+          "kind": "fn",
+          "startLine": 33,
+          "endLine": 50,
+          "tokens": 127
+        },
+        {
+          "name": "isFavorited",
+          "kind": "fn",
+          "startLine": 51,
+          "endLine": 61,
+          "tokens": 92
+        },
+        {
+          "name": "getFavoritedIds",
+          "kind": "fn",
+          "startLine": 62,
+          "endLine": 73,
+          "tokens": 93
+        }
+      ]
+    },
+    "New folder/src/lib/actions/messages.ts": {
+      "description": "API routes: GET (2 endpoints)",
+      "tokens": 1861,
+      "hash": "3aea459ac7d6da61",
+      "size": 6515,
+      "mtimeMs": 1784007646000,
+      "updatedAt": "2026-07-30T18:53:26.591Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "sendMessage",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 65,
+          "tokens": 520
+        },
+        {
+          "name": "getOrCreateConversation",
+          "kind": "fn",
+          "startLine": 66,
+          "endLine": 116,
+          "tokens": 342
+        },
+        {
+          "name": "startConversationAsProvider",
+          "kind": "fn",
+          "startLine": 117,
+          "endLine": 145,
+          "tokens": 198
+        },
+        {
+          "name": "getMyConversations",
+          "kind": "fn",
+          "startLine": 146,
+          "endLine": 178,
+          "tokens": 325
+        },
+        {
+          "name": "getConversationMessages",
+          "kind": "fn",
+          "startLine": 179,
+          "endLine": 227,
+          "tokens": 426
+        }
+      ]
+    },
+    "New folder/src/lib/actions/notifications.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 359,
+      "hash": "2809a258e4aa58b6",
+      "size": 1255,
+      "mtimeMs": 1783894862000,
+      "updatedAt": "2026-07-30T18:53:26.591Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/actions/offers.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 2557,
+      "hash": "47ba1bc45d1e1b3f",
+      "size": 8979,
+      "mtimeMs": 1784522826000,
+      "updatedAt": "2026-07-30T18:53:26.592Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "createOffer",
+          "kind": "fn",
+          "startLine": 17,
+          "endLine": 113,
+          "tokens": 799
+        },
+        {
+          "name": "getMyOffers",
+          "kind": "fn",
+          "startLine": 114,
+          "endLine": 134,
+          "tokens": 137
+        },
+        {
+          "name": "updateOfferStatus",
+          "kind": "fn",
+          "startLine": 135,
+          "endLine": 202,
+          "tokens": 623
+        },
+        {
+          "name": "markOfferCompleted",
+          "kind": "fn",
+          "startLine": 203,
+          "endLine": 252,
+          "tokens": 471
+        },
+        {
+          "name": "getProviderStats",
+          "kind": "fn",
+          "startLine": 253,
+          "endLine": 283,
+          "tokens": 292
+        },
+        {
+          "name": "getProviderProfile",
+          "kind": "fn",
+          "startLine": 284,
+          "endLine": 295,
+          "tokens": 86
+        }
+      ]
+    },
+    "New folder/src/lib/actions/profile.ts": {
+      "description": "API routes: GET (12 endpoints)",
+      "tokens": 1362,
+      "hash": "df158939038241e9",
+      "size": 4772,
+      "mtimeMs": 1785145846341.597,
+      "updatedAt": "2026-07-30T18:53:26.593Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "updateProviderProfile",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 69,
+          "tokens": 704
+        },
+        {
+          "name": "SearchParams",
+          "kind": "section",
+          "startLine": 70,
+          "endLine": 77,
+          "tokens": 36
+        },
+        {
+          "name": "searchProviders",
+          "kind": "fn",
+          "startLine": 78,
+          "endLine": 149,
+          "tokens": 546
+        }
+      ]
+    },
+    "New folder/src/lib/actions/requests.ts": {
+      "description": "API routes: GET (15 endpoints)",
+      "tokens": 3101,
+      "hash": "0e328e4b20ef6828",
+      "size": 10872,
+      "mtimeMs": 1784541746000,
+      "updatedAt": "2026-07-30T18:53:26.594Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "createServiceRequest",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 83,
+          "tokens": 582
+        },
+        {
+          "name": "closeServiceRequest",
+          "kind": "fn",
+          "startLine": 84,
+          "endLine": 108,
+          "tokens": 174
+        },
+        {
+          "name": "getOpenRequests",
+          "kind": "fn",
+          "startLine": 109,
+          "endLine": 176,
+          "tokens": 744
+        },
+        {
+          "name": "getMyRequests",
+          "kind": "fn",
+          "startLine": 177,
+          "endLine": 225,
+          "tokens": 416
+        },
+        {
+          "name": "getMyRequestsStats",
+          "kind": "fn",
+          "startLine": 226,
+          "endLine": 239,
+          "tokens": 181
+        },
+        {
+          "name": "updateServiceRequest",
+          "kind": "fn",
+          "startLine": 240,
+          "endLine": 281,
+          "tokens": 407
+        },
+        {
+          "name": "deleteServiceRequest",
+          "kind": "fn",
+          "startLine": 282,
+          "endLine": 299,
+          "tokens": 187
+        },
+        {
+          "name": "getRequestById",
+          "kind": "fn",
+          "startLine": 300,
+          "endLine": 315,
+          "tokens": 108
+        }
+      ]
+    },
+    "New folder/src/lib/actions/reviews.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 1005,
+      "hash": "01a38b16f2822688",
+      "size": 3526,
+      "mtimeMs": 1784071482000,
+      "updatedAt": "2026-07-30T18:53:26.596Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "submitReview",
+          "kind": "fn",
+          "startLine": 16,
+          "endLine": 87,
+          "tokens": 672
+        },
+        {
+          "name": "getProviderReviews",
+          "kind": "fn",
+          "startLine": 88,
+          "endLine": 98,
+          "tokens": 86
+        },
+        {
+          "name": "getProviderAverageRating",
+          "kind": "fn",
+          "startLine": 99,
+          "endLine": 110,
+          "tokens": 86
+        }
+      ]
+    },
+    "New folder/src/lib/actions/subscription.ts": {
+      "description": "Change le plan d'un prestataire (aucun paiement réel intégré ici — ce projet",
+      "tokens": 571,
+      "hash": "cc39eccf6800c311",
+      "size": 2012,
+      "mtimeMs": 1784522888000,
+      "updatedAt": "2026-07-30T18:53:26.597Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "changePlan",
+          "kind": "fn",
+          "startLine": 17,
+          "endLine": 61,
+          "tokens": 406
+        }
+      ]
+    },
+    "New folder/src/lib/email.ts": {
+      "description": "Exports sendEmail, sendTemplate",
+      "tokens": 1830,
+      "hash": "4928faa63d5a9ed1",
+      "size": 6407,
+      "mtimeMs": 1784007570000,
+      "updatedAt": "2026-07-30T18:53:26.598Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getTransport",
+          "kind": "fn",
+          "startLine": 6,
+          "endLine": 20,
+          "tokens": 104
+        },
+        {
+          "name": "buildEmail",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 24,
+          "tokens": 40
+        },
+        {
+          "name": "baseTemplate",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 44,
+          "tokens": 250
+        },
+        {
+          "name": "textBlock",
+          "kind": "fn",
+          "startLine": 45,
+          "endLine": 110,
+          "tokens": 1135
+        },
+        {
+          "name": "sendEmail",
+          "kind": "fn",
+          "startLine": 111,
+          "endLine": 129,
+          "tokens": 165
+        },
+        {
+          "name": "sendTemplate",
+          "kind": "fn",
+          "startLine": 130,
+          "endLine": 138,
+          "tokens": 95
+        }
+      ]
+    },
+    "New folder/src/lib/geo.ts": {
+      "description": "Exports geocode, haversineKm, bboxAround",
+      "tokens": 392,
+      "hash": "eb6e45119e617fb9",
+      "size": 1371,
+      "mtimeMs": 1783971488000,
+      "updatedAt": "2026-07-30T18:53:26.598Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/i18n.ts": {
+      "description": "Exports Lang",
+      "tokens": 8225,
+      "hash": "4af522f354545df1",
+      "size": 32879,
+      "mtimeMs": 1784627916000,
+      "updatedAt": "2026-07-30T18:53:26.600Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "t",
+          "kind": "fn",
+          "startLine": 372,
+          "endLine": 383,
+          "tokens": 91
+        },
+        {
+          "name": "getDir",
+          "kind": "fn",
+          "startLine": 384,
+          "endLine": 392,
+          "tokens": 89
+        }
+      ]
+    },
+    "New folder/src/lib/plan-limits.ts": {
+      "description": "Exports PLAN_LIMITS, Plan, isUnlimited, monthlyQuotaFor",
+      "tokens": 94,
+      "hash": "5a416b01bc6cb32c",
+      "size": 326,
+      "mtimeMs": 1784522718000,
+      "updatedAt": "2026-07-30T18:53:26.601Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/prisma.ts": {
+      "description": "Exports prisma",
+      "tokens": 153,
+      "hash": "9481d617fe7b9cb4",
+      "size": 533,
+      "mtimeMs": 1783895534000,
+      "updatedAt": "2026-07-30T18:53:26.602Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/require-role.ts": {
+      "description": "Vérifie que l'utilisateur est connecté et possède l'un des rôles autorisés.",
+      "tokens": 196,
+      "hash": "796f1cab8a9edeb1",
+      "size": 694,
+      "mtimeMs": 1784071416000,
+      "updatedAt": "2026-07-30T18:53:26.603Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/server-lang.ts": {
+      "description": "API routes: GET (1 endpoints)",
+      "tokens": 57,
+      "hash": "c7e5046b9641d763",
+      "size": 199,
+      "mtimeMs": 1783977594000,
+      "updatedAt": "2026-07-30T18:53:26.603Z",
+      "source": "scan"
+    },
+    "New folder/src/lib/utils.ts": {
+      "description": "Exports cn, CATEGORIES, CATEGORIES_AR, TUNISIAN_CITIES + 4 more",
+      "tokens": 499,
+      "hash": "e0a106782e89ae3b",
+      "size": 1936,
+      "mtimeMs": 1784007566000,
+      "updatedAt": "2026-07-30T18:53:26.604Z",
+      "source": "scan"
+    },
+    "New folder/src/proxy.ts": {
+      "description": "Exports config",
+      "tokens": 342,
+      "hash": "8fa305c23c89405d",
+      "size": 1197,
+      "mtimeMs": 1784007538000,
+      "updatedAt": "2026-07-30T18:53:26.605Z",
+      "source": "scan"
+    },
+    "New folder/src/types/next-auth.d.ts": {
+      "description": "Declares Session",
+      "tokens": 119,
+      "hash": "53e37cca90c32d1b",
+      "size": 414,
+      "mtimeMs": 1783847698000,
+      "updatedAt": "2026-07-30T18:53:26.605Z",
+      "source": "scan"
+    },
+    "New folder/tsconfig.json": {
+      "description": "TypeScript configuration",
+      "tokens": 192,
+      "hash": "5c51df4c59f4510d",
+      "size": 670,
+      "mtimeMs": 1783846840000,
+      "updatedAt": "2026-07-30T18:53:26.606Z",
+      "source": "scan"
+    },
+    "New folder/tsconfig.tsbuildinfo": {
+      "description": "",
+      "tokens": 44170,
+      "hash": "b830834fc564bd0f",
+      "size": 165636,
+      "mtimeMs": 1784759792000,
+      "updatedAt": "2026-07-30T18:53:26.609Z",
+      "source": "scan"
+    },
+    "New folder/vercel.json": {
+      "description": "",
+      "tokens": 51,
+      "hash": "8ae4d87267663558",
+      "size": 177,
+      "mtimeMs": 1783895186000,
+      "updatedAt": "2026-07-30T18:53:26.609Z",
+      "source": "scan"
+    },
+    "New folder/vitest.config.ts": {
+      "description": "Vitest test configuration",
+      "tokens": 95,
+      "hash": "12d7283052bf8730",
+      "size": 331,
+      "mtimeMs": 1783975046000,
+      "updatedAt": "2026-07-30T18:53:26.610Z",
+      "source": "scan"
+    },
+    "next-env.d.ts": {
+      "description": "/ <reference types=\"next\" />",
+      "tokens": 71,
+      "hash": "7b550dda9686c16f",
+      "size": 247,
+      "mtimeMs": 1785423341794.2068,
+      "updatedAt": "2026-07-30T18:53:26.610Z",
+      "source": "scan"
+    },
+    "next.config.ts": {
+      "description": "Next.js configuration",
+      "tokens": 40,
+      "hash": "6db3e638fd7a8dc3",
+      "size": 140,
+      "mtimeMs": 1783847296000,
+      "updatedAt": "2026-07-30T18:53:26.611Z",
+      "source": "scan"
+    },
+    "package-lock.json": {
+      "description": "npm lock file",
+      "tokens": 105305,
+      "hash": "6828a3cb118286db",
+      "size": 368565,
+      "mtimeMs": 1785322425042.1333,
+      "updatedAt": "2026-07-30T18:53:26.614Z",
+      "source": "scan"
+    },
+    "package.json": {
+      "description": "Node.js package manifest",
+      "tokens": 437,
+      "hash": "f45fb9d55a8a97fd",
+      "size": 1529,
+      "mtimeMs": 1784522736000,
+      "updatedAt": "2026-07-30T18:53:26.615Z",
+      "source": "scan"
+    },
+    "playwright-report/index.html": {
+      "description": "Playwright Test Report",
+      "tokens": 141194,
+      "hash": "06cf0e47fc2e2391",
+      "size": 529742,
+      "mtimeMs": 1784183762772.6992,
+      "updatedAt": "2026-07-30T18:53:26.619Z",
+      "source": "scan"
+    },
+    "playwright.config.ts": {
+      "description": "Playwright test configuration",
+      "tokens": 143,
+      "hash": "1513a1bec3aedcac",
+      "size": 498,
+      "mtimeMs": 1783975052000,
+      "updatedAt": "2026-07-30T18:53:26.620Z",
+      "source": "scan"
+    },
+    "postcss.config.mjs": {
+      "description": "Declares config",
+      "tokens": 26,
+      "hash": "dfac7ac2d86d326a",
+      "size": 94,
+      "mtimeMs": 1783846834000,
+      "updatedAt": "2026-07-30T18:53:26.621Z",
+      "source": "scan"
+    },
+    "prisma/migrations/20260712100450_init/migration.sql": {
+      "description": "CreateTable",
+      "tokens": 1013,
+      "hash": "1ed3438c8a9a46e6",
+      "size": 3543,
+      "mtimeMs": 1783847090000,
+      "updatedAt": "2026-07-30T18:53:26.622Z",
+      "source": "scan"
+    },
+    "prisma/migrations/20260712232050_add_reviews_notifications/migration.sql": {
+      "description": "AlterTable",
+      "tokens": 610,
+      "hash": "908bd93d64a5fede",
+      "size": 2133,
+      "mtimeMs": 1783894850000,
+      "updatedAt": "2026-07-30T18:53:26.624Z",
+      "source": "scan"
+    },
+    "prisma/migrations/20260730000000_add_otp_phone_and_admin_fields/migration.sql": {
+      "description": "AlterTable",
+      "tokens": 2435,
+      "hash": "5fb62eb6a873d998",
+      "size": 8522,
+      "mtimeMs": 1785418890671.0005,
+      "updatedAt": "2026-07-30T18:53:26.626Z",
+      "source": "scan"
+    },
+    "prisma/migrations/migration_lock.toml": {
+      "description": "Please do not edit this file manually",
+      "tokens": 36,
+      "hash": "3389dbaf2a3cf4b4",
+      "size": 124,
+      "mtimeMs": 1783894850000,
+      "updatedAt": "2026-07-30T18:53:26.626Z",
+      "source": "scan"
+    },
+    "prisma/schema.prisma": {
+      "description": "Prisma database schema",
+      "tokens": 2218,
+      "hash": "e10b0bd0e2831e45",
+      "size": 8340,
+      "mtimeMs": 1785358339648.9717,
+      "updatedAt": "2026-07-30T18:53:26.628Z",
+      "source": "scan"
+    },
+    "prisma/seed.ts": {
+      "description": "adapter: main",
+      "tokens": 687,
+      "hash": "3bc0d5ece989f02b",
+      "size": 2402,
+      "mtimeMs": 1783927544000,
+      "updatedAt": "2026-07-30T18:53:26.629Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 87,
+          "tokens": 601
+        }
+      ]
+    },
+    "prisma.config.ts": {
+      "description": "This file was generated by Prisma, and assumes you have installed the following:",
+      "tokens": 107,
+      "hash": "c1bcbd0ff267c8b6",
+      "size": 374,
+      "mtimeMs": 1783847052000,
+      "updatedAt": "2026-07-30T18:53:26.629Z",
+      "source": "scan"
+    },
+    "public/offline.html": {
+      "description": "Hors ligne — LocalServices",
+      "tokens": 311,
+      "hash": "8b3271e17b56a0ac",
+      "size": 1177,
+      "mtimeMs": 1784094638000,
+      "updatedAt": "2026-07-30T18:53:26.630Z",
+      "source": "scan"
+    },
+    "public/sw.js": {
+      "description": "Declares STATIC_CACHE",
+      "tokens": 753,
+      "hash": "85bbc0f4ed0680ca",
+      "size": 2645,
+      "mtimeMs": 1784094650000,
+      "updatedAt": "2026-07-30T18:53:26.631Z",
+      "source": "scan"
+    },
+    "README.md": {
+      "description": "Project documentation",
+      "tokens": 4814,
+      "hash": "a0984ee907ecfef1",
+      "size": 23558,
+      "mtimeMs": 1785424458689.593,
+      "updatedAt": "2026-07-30T18:53:26.633Z",
+      "source": "scan"
+    },
+    "src/__tests__/geo.test.ts": {
+      "description": "Declares dist",
+      "tokens": 423,
+      "hash": "be2d75598259f687",
+      "size": 1484,
+      "mtimeMs": 1783975060000,
+      "updatedAt": "2026-07-30T18:53:26.634Z",
+      "source": "scan"
+    },
+    "src/__tests__/offer-status.test.ts": {
+      "description": "Non-régression : l'UI n'affichait le formulaire d'avis que pour les offres",
+      "tokens": 369,
+      "hash": "ca3800292fa74fe1",
+      "size": 1300,
+      "mtimeMs": 1785423286012.4707,
+      "updatedAt": "2026-07-30T18:53:26.635Z",
+      "source": "scan"
+    },
+    "src/__tests__/otp.test.ts": {
+      "description": "Declares code",
+      "tokens": 2460,
+      "hash": "13f5bc7d50587bdf",
+      "size": 8661,
+      "mtimeMs": 1785387988427.5283,
+      "updatedAt": "2026-07-30T18:53:26.636Z",
+      "source": "scan"
+    },
+    "src/__tests__/profile.test.ts": {
+      "description": "Construit un FormData valide au regard de `providerProfileSchema`.",
+      "tokens": 1709,
+      "hash": "28956bed8485a668",
+      "size": 6005,
+      "mtimeMs": 1785388895891.5032,
+      "updatedAt": "2026-07-30T18:53:26.637Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "buildValidFormData",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 51,
+          "tokens": 336
+        },
+        {
+          "name": "providerSession",
+          "kind": "fn",
+          "startLine": 52,
+          "endLine": 160,
+          "tokens": 1162
+        }
+      ]
+    },
+    "src/__tests__/register-phone.test.ts": {
+      "description": "Le téléphone n'est demandé qu'aux prestataires.",
+      "tokens": 1021,
+      "hash": "2a03b5159c98af1f",
+      "size": 3619,
+      "mtimeMs": 1785424317429.7888,
+      "updatedAt": "2026-07-30T18:53:26.639Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "buildFormData",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 116,
+          "tokens": 846
+        }
+      ]
+    },
+    "src/__tests__/setup.test.ts": {
+      "description": "",
+      "tokens": 46,
+      "hash": "6f9d5d1fdffa15be",
+      "size": 159,
+      "mtimeMs": 1783975062000,
+      "updatedAt": "2026-07-30T18:53:26.639Z",
+      "source": "scan"
+    },
+    "src/__tests__/setup.ts": {
+      "description": "",
+      "tokens": 13,
+      "hash": "9b328c4843431fa7",
+      "size": 43,
+      "mtimeMs": 1783975046000,
+      "updatedAt": "2026-07-30T18:53:26.640Z",
+      "source": "scan"
+    },
+    "src/__tests__/utils.test.ts": {
+      "description": "",
+      "tokens": 141,
+      "hash": "f0171a4232786d8a",
+      "size": 495,
+      "mtimeMs": 1783975062000,
+      "updatedAt": "2026-07-30T18:53:26.641Z",
+      "source": "scan"
+    },
+    "src/app/admin/layout.tsx": {
+      "description": "metadata",
+      "tokens": 93,
+      "hash": "51cc7ce01e0bcfe4",
+      "size": 327,
+      "mtimeMs": 1783974944000,
+      "updatedAt": "2026-07-30T18:53:26.642Z",
+      "source": "scan"
+    },
+    "src/app/admin/page.tsx": {
+      "description": "AdminDashboard — renders form, table — uses useState, useEffect",
+      "tokens": 3328,
+      "hash": "64cf4983ff11b5dd",
+      "size": 11651,
+      "mtimeMs": 1785359379363.4043,
+      "updatedAt": "2026-07-30T18:53:26.643Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AdminDashboard",
+          "kind": "fn",
+          "startLine": 26,
+          "endLine": 255,
+          "tokens": 3066
+        }
+      ]
+    },
+    "src/app/api/auth/[...nextauth]/route.ts": {
+      "description": "Next.js API route",
+      "tokens": 33,
+      "hash": "3eb83a8f3ddf59db",
+      "size": 115,
+      "mtimeMs": 1784181474000,
+      "updatedAt": "2026-07-30T18:53:26.644Z",
+      "source": "scan"
+    },
+    "src/app/api/cron/reset-tokens/route.ts": {
+      "description": "Next.js API route: POST",
+      "tokens": 381,
+      "hash": "470c5712adf90860",
+      "size": 1339,
+      "mtimeMs": 1784522838000,
+      "updatedAt": "2026-07-30T18:53:26.645Z",
+      "source": "scan"
+    },
+    "src/app/api/upload/route.ts": {
+      "description": "Next.js API route: POST",
+      "tokens": 546,
+      "hash": "c317d407cce09fd3",
+      "size": 1917,
+      "mtimeMs": 1784522802000,
+      "updatedAt": "2026-07-30T18:53:26.646Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "POST",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 62,
+          "tokens": 413
+        }
+      ]
+    },
+    "src/app/connexion/page.tsx": {
+      "description": "metadata",
+      "tokens": 397,
+      "hash": "b3f1e82b23fbd425",
+      "size": 1389,
+      "mtimeMs": 1783977624000,
+      "updatedAt": "2026-07-30T18:53:26.647Z",
+      "source": "scan"
+    },
+    "src/app/dashboard/client/page.tsx": {
+      "description": "ClientDashboard — uses useState, useEffect",
+      "tokens": 9328,
+      "hash": "d67577727110e4fa",
+      "size": 32653,
+      "mtimeMs": 1785423098789.8142,
+      "updatedAt": "2026-07-30T18:53:26.649Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ServiceRequest",
+          "kind": "section",
+          "startLine": 29,
+          "endLine": 53,
+          "tokens": 140
+        },
+        {
+          "name": "ClientDashboard",
+          "kind": "fn",
+          "startLine": 54,
+          "endLine": 641,
+          "tokens": 8759
+        }
+      ]
+    },
+    "src/app/dashboard/layout.tsx": {
+      "description": "metadata",
+      "tokens": 304,
+      "hash": "f9883d80062c7783",
+      "size": 1068,
+      "mtimeMs": 1785388346397.268,
+      "updatedAt": "2026-07-30T18:53:26.650Z",
+      "source": "scan"
+    },
+    "src/app/dashboard/prestataire/page.tsx": {
+      "description": "PrestataireDashboard — uses useState, useEffect",
+      "tokens": 7288,
+      "hash": "f5e9f34665236c6e",
+      "size": 25514,
+      "mtimeMs": 1785216989226.4546,
+      "updatedAt": "2026-07-30T18:53:26.653Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ServiceRequest",
+          "kind": "section",
+          "startLine": 29,
+          "endLine": 43,
+          "tokens": 93
+        },
+        {
+          "name": "ProviderProfile",
+          "kind": "section",
+          "startLine": 44,
+          "endLine": 64,
+          "tokens": 145
+        },
+        {
+          "name": "Offer",
+          "kind": "section",
+          "startLine": 65,
+          "endLine": 80,
+          "tokens": 73
+        },
+        {
+          "name": "Review",
+          "kind": "section",
+          "startLine": 81,
+          "endLine": 89,
+          "tokens": 52
+        },
+        {
+          "name": "PrestataireDashboard",
+          "kind": "fn",
+          "startLine": 90,
+          "endLine": 604,
+          "tokens": 6624
+        }
+      ]
+    },
+    "src/app/globals.css": {
+      "description": "Styles: 26 rules, 17 vars, 7 animations",
+      "tokens": 1631,
+      "hash": "31b5cf637eec7329",
+      "size": 5729,
+      "mtimeMs": 1784610074000,
+      "updatedAt": "2026-07-30T18:53:26.654Z",
+      "source": "scan"
+    },
+    "src/app/inscription/page.tsx": {
+      "description": "metadata",
+      "tokens": 408,
+      "hash": "f6dcce316332d34c",
+      "size": 1428,
+      "mtimeMs": 1783977626000,
+      "updatedAt": "2026-07-30T18:53:26.655Z",
+      "source": "scan"
+    },
+    "src/app/layout.tsx": {
+      "description": "inter",
+      "tokens": 449,
+      "hash": "054df877d1f22ba2",
+      "size": 1570,
+      "mtimeMs": 1784759920000,
+      "updatedAt": "2026-07-30T18:53:26.656Z",
+      "source": "scan"
+    },
+    "src/app/manifest.ts": {
+      "description": "Exports manifest",
+      "tokens": 167,
+      "hash": "01b1c041d0c179db",
+      "size": 582,
+      "mtimeMs": 1783974686000,
+      "updatedAt": "2026-07-30T18:53:26.657Z",
+      "source": "scan"
+    },
+    "src/app/page.tsx": {
+      "description": "getStats — renders form",
+      "tokens": 3972,
+      "hash": "d0fe86e671ff3cb2",
+      "size": 13970,
+      "mtimeMs": 1784627926000,
+      "updatedAt": "2026-07-30T18:53:26.658Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getStats",
+          "kind": "fn",
+          "startLine": 10,
+          "endLine": 18,
+          "tokens": 75
+        },
+        {
+          "name": "getFeaturedProviders",
+          "kind": "fn",
+          "startLine": 19,
+          "endLine": 37,
+          "tokens": 192
+        },
+        {
+          "name": "getTestimonials",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 50,
+          "tokens": 96
+        },
+        {
+          "name": "HomePage",
+          "kind": "fn",
+          "startLine": 51,
+          "endLine": 280,
+          "tokens": 3497
+        }
+      ]
+    },
+    "src/app/prestataires/[id]/page.tsx": {
+      "description": "dynamic — renders map",
+      "tokens": 2410,
+      "hash": "7d592698ae918410",
+      "size": 8443,
+      "mtimeMs": 1784697234000,
+      "updatedAt": "2026-07-30T18:53:26.660Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "generateMetadata",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 22,
+          "tokens": 176
+        },
+        {
+          "name": "ProviderProfilePage",
+          "kind": "fn",
+          "startLine": 23,
+          "endLine": 171,
+          "tokens": 2098
+        }
+      ]
+    },
+    "src/app/prestataires/layout.tsx": {
+      "description": "metadata",
+      "tokens": 104,
+      "hash": "506806e7181060db",
+      "size": 366,
+      "mtimeMs": 1783974944000,
+      "updatedAt": "2026-07-30T18:53:26.660Z",
+      "source": "scan"
+    },
+    "src/app/prestataires/page.tsx": {
+      "description": "PrestatairesPage — renders map — uses useState, useEffect",
+      "tokens": 1750,
+      "hash": "b5e4df97ab02b960",
+      "size": 6129,
+      "mtimeMs": 1784072870000,
+      "updatedAt": "2026-07-30T18:53:26.662Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Provider",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 24,
+          "tokens": 71
+        },
+        {
+          "name": "PrestatairesPage",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 146,
+          "tokens": 1545
+        }
+      ]
+    },
+    "src/app/robots.ts": {
+      "description": "Exports robots",
+      "tokens": 84,
+      "hash": "39efd657c2671cd6",
+      "size": 292,
+      "mtimeMs": 1783974864000,
+      "updatedAt": "2026-07-30T18:53:26.663Z",
+      "source": "scan"
+    },
+    "src/app/sitemap.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 279,
+      "hash": "0014d90ebaede7a8",
+      "size": 976,
+      "mtimeMs": 1783974864000,
+      "updatedAt": "2026-07-30T18:53:26.663Z",
+      "source": "scan"
+    },
+    "src/app/verify-otp/OTPInputForm.tsx": {
+      "description": "Délai avant de pouvoir demander un nouveau code.",
+      "tokens": 1914,
+      "hash": "6502c1e600bd0d37",
+      "size": 6714,
+      "mtimeMs": 1785388257246.995,
+      "updatedAt": "2026-07-30T18:53:26.665Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "OTPInputFormProps",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 19,
+          "tokens": 51
+        },
+        {
+          "name": "OTPInputForm",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 216,
+          "tokens": 1744
+        }
+      ]
+    },
+    "src/app/verify-otp/page.tsx": {
+      "description": "En Next 16, `searchParams` est une Promise : elle doit être awaitée.",
+      "tokens": 1799,
+      "hash": "ae787ec238f11300",
+      "size": 6332,
+      "mtimeMs": 1785388226596.5825,
+      "updatedAt": "2026-07-30T18:53:26.666Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "isChannel",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 17,
+          "tokens": 63
+        },
+        {
+          "name": "VerifyOTPProps",
+          "kind": "section",
+          "startLine": 18,
+          "endLine": 27,
+          "tokens": 80
+        },
+        {
+          "name": "first",
+          "kind": "fn",
+          "startLine": 28,
+          "endLine": 31,
+          "tokens": 37
+        },
+        {
+          "name": "VerifyOTPPage",
+          "kind": "fn",
+          "startLine": 32,
+          "endLine": 154,
+          "tokens": 1199
+        },
+        {
+          "name": "Shell",
+          "kind": "fn",
+          "startLine": 155,
+          "endLine": 169,
+          "tokens": 148
+        },
+        {
+          "name": "ChannelButton",
+          "kind": "fn",
+          "startLine": 170,
+          "endLine": 185,
+          "tokens": 145
+        }
+      ]
+    },
+    "src/auth.ts": {
+      "description": "Declares NextAuthConfig",
+      "tokens": 454,
+      "hash": "e80c21dba66b6d7f",
+      "size": 1586,
+      "mtimeMs": 1784007632000,
+      "updatedAt": "2026-07-30T18:53:26.668Z",
+      "source": "scan"
+    },
+    "src/components/AccountSettingsForm.tsx": {
+      "description": "AccountSettingsForm — renders form — uses useState",
+      "tokens": 937,
+      "hash": "720e3f612540eefc",
+      "size": 3278,
+      "mtimeMs": 1783977692000,
+      "updatedAt": "2026-07-30T18:53:26.669Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AccountSettingsForm",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 75,
+          "tokens": 879
+        }
+      ]
+    },
+    "src/components/admin/ActionConfirmationModal.tsx": {
+      "description": "Champ additionnel affiché entre la description et les boutons (ex: motif de bannissement).",
+      "tokens": 1026,
+      "hash": "f0f06338674f92c4",
+      "size": 3593,
+      "mtimeMs": 1785359263773.0356,
+      "updatedAt": "2026-07-30T18:53:26.671Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ActionConfirmationModalProps",
+          "kind": "section",
+          "startLine": 5,
+          "endLine": 18,
+          "tokens": 117
+        },
+        {
+          "name": "ActionConfirmationModal",
+          "kind": "fn",
+          "startLine": 19,
+          "endLine": 91,
+          "tokens": 668
+        },
+        {
+          "name": "useConfirmationModal",
+          "kind": "fn",
+          "startLine": 92,
+          "endLine": 125,
+          "tokens": 228
+        }
+      ]
+    },
+    "src/components/admin/Dashboard.tsx": {
+      "description": "AdminDashboard — uses useState, useCallback, useEffect",
+      "tokens": 1525,
+      "hash": "1df3f32b83ccb32b",
+      "size": 5342,
+      "mtimeMs": 1785359307187.3374,
+      "updatedAt": "2026-07-30T18:53:26.672Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AdminDashboard",
+          "kind": "fn",
+          "startLine": 12,
+          "endLine": 130,
+          "tokens": 1415
+        }
+      ]
+    },
+    "src/components/admin/DemandManagementTable.tsx": {
+      "description": "DemandManagementTable — renders table — uses useState, useCallback, useEffect",
+      "tokens": 2458,
+      "hash": "277797144243adcb",
+      "size": 8604,
+      "mtimeMs": 1785359339553.0007,
+      "updatedAt": "2026-07-30T18:53:26.674Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "DemandManagementTable",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 218,
+          "tokens": 2303
+        }
+      ]
+    },
+    "src/components/admin/StatCard.tsx": {
+      "description": "colorClasses",
+      "tokens": 298,
+      "hash": "660af2fab7920a47",
+      "size": 1040,
+      "mtimeMs": 1785302803645.214,
+      "updatedAt": "2026-07-30T18:53:26.675Z",
+      "source": "scan"
+    },
+    "src/components/admin/SubscriptionPanel.tsx": {
+      "description": "PLAN_PRICES — renders table — uses useState, useCallback, useEffect",
+      "tokens": 2420,
+      "hash": "bb88c168c6943752",
+      "size": 8472,
+      "mtimeMs": 1785359324882.2698,
+      "updatedAt": "2026-07-30T18:53:26.677Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "SubscriptionPanel",
+          "kind": "fn",
+          "startLine": 22,
+          "endLine": 206,
+          "tokens": 2212
+        }
+      ]
+    },
+    "src/components/admin/UserManagementTable.tsx": {
+      "description": "UserManagementTable — renders table — uses useState, useCallback, useEffect",
+      "tokens": 3807,
+      "hash": "96cf0f0660f5e074",
+      "size": 13330,
+      "mtimeMs": 1785358595661.3362,
+      "updatedAt": "2026-07-30T18:53:26.678Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "UserManagementTable",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 320,
+          "tokens": 3630
+        }
+      ]
+    },
+    "src/components/AdModal.tsx": {
+      "description": "STORAGE_KEY — uses useState, useEffect",
+      "tokens": 804,
+      "hash": "1befbe6bc919afa3",
+      "size": 2821,
+      "mtimeMs": 1784523064000,
+      "updatedAt": "2026-07-30T18:53:26.679Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AdModal",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 81,
+          "tokens": 725
+        }
+      ]
+    },
+    "src/components/AiAssistantButton.tsx": {
+      "description": "Récupère les mots-clés actuels du formulaire (ex: contenu du champ titre)",
+      "tokens": 556,
+      "hash": "43c81356617ff178",
+      "size": 1948,
+      "mtimeMs": 1784523050000,
+      "updatedAt": "2026-07-30T18:53:26.681Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AiAssistantButton",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 55,
+          "tokens": 486
+        }
+      ]
+    },
+    "src/components/AuthProvider.tsx": {
+      "description": "AuthProvider",
+      "tokens": 88,
+      "hash": "2a1de381020d62d5",
+      "size": 305,
+      "mtimeMs": 1784179742000,
+      "updatedAt": "2026-07-30T18:53:26.682Z",
+      "source": "scan"
+    },
+    "src/components/ConversationsList.tsx": {
+      "description": "ConversationsList — uses useState, useCallback, useEffect",
+      "tokens": 990,
+      "hash": "6f292ab45b07c3a7",
+      "size": 3465,
+      "mtimeMs": 1784495752000,
+      "updatedAt": "2026-07-30T18:53:26.684Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Conversation",
+          "kind": "section",
+          "startLine": 11,
+          "endLine": 20,
+          "tokens": 97
+        },
+        {
+          "name": "ConversationsList",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 102,
+          "tokens": 791
+        }
+      ]
+    },
+    "src/components/ConversationView.tsx": {
+      "description": "ConversationView — renders form — uses useState, useEffect",
+      "tokens": 1348,
+      "hash": "794d53931b97a8af",
+      "size": 4717,
+      "mtimeMs": 1784495760000,
+      "updatedAt": "2026-07-30T18:53:26.686Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Message",
+          "kind": "section",
+          "startLine": 9,
+          "endLine": 17,
+          "tokens": 47
+        },
+        {
+          "name": "ConversationData",
+          "kind": "section",
+          "startLine": 18,
+          "endLine": 26,
+          "tokens": 52
+        },
+        {
+          "name": "ConversationView",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 131,
+          "tokens": 1169
+        }
+      ]
+    },
+    "src/components/CreativeAdModal.tsx": {
+      "description": "STORAGE_KEY — uses useState, useEffect",
+      "tokens": 1280,
+      "hash": "839ad3d8d1826e8e",
+      "size": 4497,
+      "mtimeMs": 1784627900000,
+      "updatedAt": "2026-07-30T18:53:26.687Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "CreativeAdModal",
+          "kind": "fn",
+          "startLine": 11,
+          "endLine": 111,
+          "tokens": 1200
+        }
+      ]
+    },
+    "src/components/EditProfileForm.tsx": {
+      "description": "EditProfileForm — renders form — uses useState",
+      "tokens": 4346,
+      "hash": "2ee4de71f67595b1",
+      "size": 15245,
+      "mtimeMs": 1785217039953.2324,
+      "updatedAt": "2026-07-30T18:53:26.689Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ProfileFormProps",
+          "kind": "section",
+          "startLine": 10,
+          "endLine": 29,
+          "tokens": 141
+        },
+        {
+          "name": "EditProfileForm",
+          "kind": "fn",
+          "startLine": 30,
+          "endLine": 373,
+          "tokens": 4118
+        }
+      ]
+    },
+    "src/components/FavoriteButton.tsx": {
+      "description": "FavoriteButton — uses useState",
+      "tokens": 402,
+      "hash": "a004e04af741dbca",
+      "size": 1407,
+      "mtimeMs": 1784072810000,
+      "updatedAt": "2026-07-30T18:53:26.690Z",
+      "source": "scan"
+    },
+    "src/components/LangSwitcher.tsx": {
+      "description": "LangSwitcher",
+      "tokens": 199,
+      "hash": "83b504c4fe3d4d06",
+      "size": 694,
+      "mtimeMs": 1783977562000,
+      "updatedAt": "2026-07-30T18:53:26.691Z",
+      "source": "scan"
+    },
+    "src/components/LanguageProvider.tsx": {
+      "description": "LangContext — uses useCallback, useEffect, useContext",
+      "tokens": 293,
+      "hash": "073ff1e2d81a5b65",
+      "size": 1023,
+      "mtimeMs": 1783977560000,
+      "updatedAt": "2026-07-30T18:53:26.693Z",
+      "source": "scan"
+    },
+    "src/components/LocationMap.tsx": {
+      "description": "iconUrl — uses useEffect",
+      "tokens": 374,
+      "hash": "044a1af6c047d8ac",
+      "size": 1306,
+      "mtimeMs": 1784007548000,
+      "updatedAt": "2026-07-30T18:53:26.695Z",
+      "source": "scan"
+    },
+    "src/components/LocationPicker.tsx": {
+      "description": "useDebouncedValue — renders map — uses useState, useEffect",
+      "tokens": 1831,
+      "hash": "8d7327dc65406b4d",
+      "size": 6411,
+      "mtimeMs": 1784840832000,
+      "updatedAt": "2026-07-30T18:53:26.696Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "LocationResult",
+          "kind": "section",
+          "startLine": 8,
+          "endLine": 13,
+          "tokens": 24
+        },
+        {
+          "name": "useDebouncedValue",
+          "kind": "fn",
+          "startLine": 14,
+          "endLine": 23,
+          "tokens": 108
+        },
+        {
+          "name": "dedupeByProximity",
+          "kind": "fn",
+          "startLine": 24,
+          "endLine": 33,
+          "tokens": 81
+        },
+        {
+          "name": "LocationPicker",
+          "kind": "fn",
+          "startLine": 34,
+          "endLine": 175,
+          "tokens": 1558
+        }
+      ]
+    },
+    "src/components/LoginForm.tsx": {
+      "description": "LoginForm — renders form — uses useRouter, useState",
+      "tokens": 790,
+      "hash": "fd96088b47b745c9",
+      "size": 2792,
+      "mtimeMs": 1784236872000,
+      "updatedAt": "2026-07-30T18:53:26.698Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "LoginForm",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 84,
+          "tokens": 722
+        }
+      ]
+    },
+    "src/components/Navbar.tsx": {
+      "description": "Navbar — uses useState",
+      "tokens": 1923,
+      "hash": "b3a0ea1b9d193285",
+      "size": 6731,
+      "mtimeMs": 1784697278000,
+      "updatedAt": "2026-07-30T18:53:26.700Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Navbar",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 164,
+          "tokens": 1806
+        }
+      ]
+    },
+    "src/components/NotificationBell.tsx": {
+      "description": "NotificationBell — uses useState, useCallback, useEffect",
+      "tokens": 1394,
+      "hash": "7bd506b9c4e2f740",
+      "size": 4878,
+      "mtimeMs": 1784072930000,
+      "updatedAt": "2026-07-30T18:53:26.701Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Notification",
+          "kind": "section",
+          "startLine": 16,
+          "endLine": 24,
+          "tokens": 42
+        },
+        {
+          "name": "NotificationBell",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 138,
+          "tokens": 1231
+        }
+      ]
+    },
+    "src/components/OfferStepper.tsx": {
+      "description": "STEPS",
+      "tokens": 596,
+      "hash": "e0c913261f8bc83e",
+      "size": 2086,
+      "mtimeMs": 1784740362000,
+      "updatedAt": "2026-07-30T18:53:26.702Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "OfferStepper",
+          "kind": "fn",
+          "startLine": 3,
+          "endLine": 55,
+          "tokens": 578
+        }
+      ]
+    },
+    "src/components/OTPVerificationModal.tsx": {
+      "description": "Modal de vérification OTP avec 6 cases de saisie.",
+      "tokens": 1264,
+      "hash": "be4bbce477755291",
+      "size": 4434,
+      "mtimeMs": 1785146100452.5554,
+      "updatedAt": "2026-07-30T18:53:26.703Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "OTPVerificationModalProps",
+          "kind": "section",
+          "startLine": 8,
+          "endLine": 17,
+          "tokens": 82
+        },
+        {
+          "name": "OTPVerificationModal",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 137,
+          "tokens": 1120
+        }
+      ]
+    },
+    "src/components/PhoneVerificationBanner.tsx": {
+      "description": "Clé de session : le rejet ne vaut que pour l'onglet courant, le rappel",
+      "tokens": 699,
+      "hash": "eb5c4ec16fb8d371",
+      "size": 2456,
+      "mtimeMs": 1785388335902.5781,
+      "updatedAt": "2026-07-30T18:53:26.704Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "PhoneVerificationBannerProps",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 17,
+          "tokens": 36
+        },
+        {
+          "name": "PhoneVerificationBanner",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 68,
+          "tokens": 540
+        }
+      ]
+    },
+    "src/components/ProviderCard.tsx": {
+      "description": "ProviderCard — renders map",
+      "tokens": 840,
+      "hash": "d15b9fb91740abff",
+      "size": 2943,
+      "mtimeMs": 1784697160000,
+      "updatedAt": "2026-07-30T18:53:26.705Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ProviderCardData",
+          "kind": "section",
+          "startLine": 6,
+          "endLine": 17,
+          "tokens": 69
+        },
+        {
+          "name": "ProviderCard",
+          "kind": "fn",
+          "startLine": 18,
+          "endLine": 84,
+          "tokens": 718
+        }
+      ]
+    },
+    "src/components/ProviderMap.tsx": {
+      "description": "LocationMap",
+      "tokens": 176,
+      "hash": "6a865c3a1015dc13",
+      "size": 616,
+      "mtimeMs": 1784094436000,
+      "updatedAt": "2026-07-30T18:53:26.705Z",
+      "source": "scan"
+    },
+    "src/components/PwaRegister.tsx": {
+      "description": "PwaRegister — uses useEffect",
+      "tokens": 271,
+      "hash": "bfa19ccf1007a84b",
+      "size": 954,
+      "mtimeMs": 1784151460000,
+      "updatedAt": "2026-07-30T18:53:26.706Z",
+      "source": "scan"
+    },
+    "src/components/RegisterForm.tsx": {
+      "description": "RegisterForm — renders form — uses useRouter, useState",
+      "tokens": 2422,
+      "hash": "30bb882ff16a44c6",
+      "size": 8516,
+      "mtimeMs": 1785423786563.2637,
+      "updatedAt": "2026-07-30T18:53:26.707Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "RegisterForm",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 252,
+          "tokens": 2295
+        }
+      ]
+    },
+    "src/components/RequestStepper.tsx": {
+      "description": "STEPS",
+      "tokens": 485,
+      "hash": "3520c159c888f6e0",
+      "size": 1699,
+      "mtimeMs": 1784740362000,
+      "updatedAt": "2026-07-30T18:53:26.708Z",
+      "source": "scan"
+    },
+    "src/components/ReviewForm.tsx": {
+      "description": "ReviewForm — renders form — uses useState",
+      "tokens": 815,
+      "hash": "126afd49db41223d",
+      "size": 2856,
+      "mtimeMs": 1784072818000,
+      "updatedAt": "2026-07-30T18:53:26.709Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ReviewFormProps",
+          "kind": "section",
+          "startLine": 8,
+          "endLine": 12,
+          "tokens": 21
+        },
+        {
+          "name": "ReviewForm",
+          "kind": "fn",
+          "startLine": 13,
+          "endLine": 79,
+          "tokens": 570
+        },
+        {
+          "name": "StarsDisplay",
+          "kind": "fn",
+          "startLine": 80,
+          "endLine": 99,
+          "tokens": 170
+        }
+      ]
+    },
+    "src/components/ThemeProvider.tsx": {
+      "description": "ThemeContext — uses useEffect, useContext",
+      "tokens": 433,
+      "hash": "8e93d119d9f68f7e",
+      "size": 1513,
+      "mtimeMs": 1784007512000,
+      "updatedAt": "2026-07-30T18:53:26.710Z",
+      "source": "scan"
+    },
+    "src/components/ThemeToggle.tsx": {
+      "description": "ThemeToggle",
+      "tokens": 181,
+      "hash": "9d8672e7b9309395",
+      "size": 631,
+      "mtimeMs": 1783977720000,
+      "updatedAt": "2026-07-30T18:53:26.712Z",
+      "source": "scan"
+    },
+    "src/components/VoiceAndAiPremium.tsx": {
+      "description": "formatDuration — uses useState, useCallback, useEffect",
+      "tokens": 2997,
+      "hash": "97e356a2d7d8045b",
+      "size": 10504,
+      "mtimeMs": 1784610404000,
+      "updatedAt": "2026-07-30T18:53:26.713Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "formatDuration",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 18,
+          "tokens": 122
+        },
+        {
+          "name": "AiScanOverlay",
+          "kind": "fn",
+          "startLine": 19,
+          "endLine": 31,
+          "tokens": 142
+        },
+        {
+          "name": "AiMagicSwitch",
+          "kind": "fn",
+          "startLine": 32,
+          "endLine": 102,
+          "tokens": 668
+        },
+        {
+          "name": "MysticVoiceRecorder",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 278,
+          "tokens": 1977
+        }
+      ]
+    },
+    "src/components/VoiceRecorder.tsx": {
+      "description": "formatDuration — uses useState, useCallback, useEffect",
+      "tokens": 1837,
+      "hash": "3feecaf705a666c8",
+      "size": 6427,
+      "mtimeMs": 1784523040000,
+      "updatedAt": "2026-07-30T18:53:26.713Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "formatDuration",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 13,
+          "tokens": 46
+        },
+        {
+          "name": "VoiceRecorder",
+          "kind": "fn",
+          "startLine": 14,
+          "endLine": 195,
+          "tokens": 1721
+        }
+      ]
+    },
+    "src/lib/action-result.ts": {
+      "description": "Exports ActionResult, ok, fail",
+      "tokens": 85,
+      "hash": "8ee4d08f06408775",
+      "size": 297,
+      "mtimeMs": 1784071412000,
+      "updatedAt": "2026-07-30T18:53:26.714Z",
+      "source": "scan"
+    },
+    "src/lib/actions/account.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 404,
+      "hash": "cdb77b2cf49d7a45",
+      "size": 1418,
+      "mtimeMs": 1783922684000,
+      "updatedAt": "2026-07-30T18:53:26.715Z",
+      "source": "scan"
+    },
+    "src/lib/actions/admin.ts": {
+      "description": "Liste les comptes pour la table d'administration.",
+      "tokens": 4078,
+      "hash": "2a9000a94d5960b3",
+      "size": 14309,
+      "mtimeMs": 1785358418420.5664,
+      "updatedAt": "2026-07-30T18:53:26.717Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getCategories",
+          "kind": "fn",
+          "startLine": 12,
+          "endLine": 19,
+          "tokens": 65
+        },
+        {
+          "name": "createCategory",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 37,
+          "tokens": 185
+        },
+        {
+          "name": "deleteCategory",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 51,
+          "tokens": 104
+        },
+        {
+          "name": "getAllReviews",
+          "kind": "fn",
+          "startLine": 52,
+          "endLine": 71,
+          "tokens": 124
+        },
+        {
+          "name": "hideReview",
+          "kind": "fn",
+          "startLine": 72,
+          "endLine": 86,
+          "tokens": 100
+        },
+        {
+          "name": "deleteReview",
+          "kind": "fn",
+          "startLine": 87,
+          "endLine": 100,
+          "tokens": 99
+        },
+        {
+          "name": "getAdvancedStats",
+          "kind": "fn",
+          "startLine": 101,
+          "endLine": 196,
+          "tokens": 724
+        },
+        {
+          "name": "getAllUsers",
+          "kind": "fn",
+          "startLine": 197,
+          "endLine": 264,
+          "tokens": 495
+        },
+        {
+          "name": "toggleUserBanAction",
+          "kind": "fn",
+          "startLine": 265,
+          "endLine": 304,
+          "tokens": 322
+        },
+        {
+          "name": "verifyProAccountAction",
+          "kind": "fn",
+          "startLine": 305,
+          "endLine": 347,
+          "tokens": 298
+        },
+        {
+          "name": "getAllSubscriptions",
+          "kind": "fn",
+          "startLine": 348,
+          "endLine": 398,
+          "tokens": 380
+        },
+        {
+          "name": "updateUserSubscriptionAction",
+          "kind": "fn",
+          "startLine": 399,
+          "endLine": 454,
+          "tokens": 436
+        },
+        {
+          "name": "getAllDemands",
+          "kind": "fn",
+          "startLine": 455,
+          "endLine": 494,
+          "tokens": 271
+        },
+        {
+          "name": "deleteDemandAdminAction",
+          "kind": "fn",
+          "startLine": 495,
+          "endLine": 516,
+          "tokens": 171
+        },
+        {
+          "name": "updateDemandStatusAdminAction",
+          "kind": "fn",
+          "startLine": 517,
+          "endLine": 543,
+          "tokens": 208
+        }
+      ]
+    },
+    "src/lib/actions/ai.ts": {
+      "description": "Génère un titre + une description professionnels à partir de quelques",
+      "tokens": 813,
+      "hash": "797365b55e4b4dcb",
+      "size": 2873,
+      "mtimeMs": 1784522758000,
+      "updatedAt": "2026-07-30T18:53:26.718Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AiSuggestion",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 25,
+          "tokens": 124
+        },
+        {
+          "name": "generateRequestText",
+          "kind": "fn",
+          "startLine": 26,
+          "endLine": 77,
+          "tokens": 580
+        }
+      ]
+    },
+    "src/lib/actions/auth.ts": {
+      "description": "API routes: GET (10 endpoints)",
+      "tokens": 1216,
+      "hash": "4bd99af1ba6a08f9",
+      "size": 4304,
+      "mtimeMs": 1785423735842.016,
+      "updatedAt": "2026-07-30T18:53:26.719Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "register",
+          "kind": "fn",
+          "startLine": 42,
+          "endLine": 118,
+          "tokens": 763
+        }
+      ]
+    },
+    "src/lib/actions/favorites.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 618,
+      "hash": "530026a79399dc4f",
+      "size": 2164,
+      "mtimeMs": 1784071428000,
+      "updatedAt": "2026-07-30T18:53:26.720Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "toggleFavorite",
+          "kind": "fn",
+          "startLine": 9,
+          "endLine": 32,
+          "tokens": 233
+        },
+        {
+          "name": "getMyFavorites",
+          "kind": "fn",
+          "startLine": 33,
+          "endLine": 50,
+          "tokens": 127
+        },
+        {
+          "name": "isFavorited",
+          "kind": "fn",
+          "startLine": 51,
+          "endLine": 61,
+          "tokens": 92
+        },
+        {
+          "name": "getFavoritedIds",
+          "kind": "fn",
+          "startLine": 62,
+          "endLine": 73,
+          "tokens": 93
+        }
+      ]
+    },
+    "src/lib/actions/messages.ts": {
+      "description": "API routes: GET (2 endpoints)",
+      "tokens": 1861,
+      "hash": "3aea459ac7d6da61",
+      "size": 6515,
+      "mtimeMs": 1784007646000,
+      "updatedAt": "2026-07-30T18:53:26.721Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "sendMessage",
+          "kind": "fn",
+          "startLine": 8,
+          "endLine": 65,
+          "tokens": 520
+        },
+        {
+          "name": "getOrCreateConversation",
+          "kind": "fn",
+          "startLine": 66,
+          "endLine": 116,
+          "tokens": 342
+        },
+        {
+          "name": "startConversationAsProvider",
+          "kind": "fn",
+          "startLine": 117,
+          "endLine": 145,
+          "tokens": 198
+        },
+        {
+          "name": "getMyConversations",
+          "kind": "fn",
+          "startLine": 146,
+          "endLine": 178,
+          "tokens": 325
+        },
+        {
+          "name": "getConversationMessages",
+          "kind": "fn",
+          "startLine": 179,
+          "endLine": 227,
+          "tokens": 426
+        }
+      ]
+    },
+    "src/lib/actions/notifications.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 359,
+      "hash": "2809a258e4aa58b6",
+      "size": 1255,
+      "mtimeMs": 1783894862000,
+      "updatedAt": "2026-07-30T18:53:26.722Z",
+      "source": "scan"
+    },
+    "src/lib/actions/offers.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 2557,
+      "hash": "47ba1bc45d1e1b3f",
+      "size": 8979,
+      "mtimeMs": 1784522826000,
+      "updatedAt": "2026-07-30T18:53:26.723Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "createOffer",
+          "kind": "fn",
+          "startLine": 17,
+          "endLine": 113,
+          "tokens": 799
+        },
+        {
+          "name": "getMyOffers",
+          "kind": "fn",
+          "startLine": 114,
+          "endLine": 134,
+          "tokens": 137
+        },
+        {
+          "name": "updateOfferStatus",
+          "kind": "fn",
+          "startLine": 135,
+          "endLine": 202,
+          "tokens": 623
+        },
+        {
+          "name": "markOfferCompleted",
+          "kind": "fn",
+          "startLine": 203,
+          "endLine": 252,
+          "tokens": 471
+        },
+        {
+          "name": "getProviderStats",
+          "kind": "fn",
+          "startLine": 253,
+          "endLine": 283,
+          "tokens": 292
+        },
+        {
+          "name": "getProviderProfile",
+          "kind": "fn",
+          "startLine": 284,
+          "endLine": 295,
+          "tokens": 86
+        }
+      ]
+    },
+    "src/lib/actions/otp.ts": {
+      "description": "Durée de validité d'un code.",
+      "tokens": 1789,
+      "hash": "5a177f9c77c6657d",
+      "size": 6326,
+      "mtimeMs": 1785360519561.1057,
+      "updatedAt": "2026-07-30T18:53:26.724Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "SendOTPResult",
+          "kind": "section",
+          "startLine": 18,
+          "endLine": 27,
+          "tokens": 72
+        },
+        {
+          "name": "normalizeTarget",
+          "kind": "fn",
+          "startLine": 28,
+          "endLine": 36,
+          "tokens": 109
+        },
+        {
+          "name": "getClientIp",
+          "kind": "fn",
+          "startLine": 37,
+          "endLine": 54,
+          "tokens": 181
+        },
+        {
+          "name": "purgeExpiredOtps",
+          "kind": "fn",
+          "startLine": 55,
+          "endLine": 69,
+          "tokens": 149
+        },
+        {
+          "name": "sendOTPAction",
+          "kind": "fn",
+          "startLine": 70,
+          "endLine": 142,
+          "tokens": 594
+        },
+        {
+          "name": "VerifyOTPResult",
+          "kind": "section",
+          "startLine": 143,
+          "endLine": 151,
+          "tokens": 52
+        },
+        {
+          "name": "verifyOTPAction",
+          "kind": "fn",
+          "startLine": 152,
+          "endLine": 206,
+          "tokens": 453
+        }
+      ]
+    },
+    "src/lib/actions/profile.ts": {
+      "description": "Prisma data access layer",
+      "tokens": 1423,
+      "hash": "e75a3d1cefa7a806",
+      "size": 4990,
+      "mtimeMs": 1785418451883.8015,
+      "updatedAt": "2026-07-30T18:53:26.725Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "updateProviderProfile",
+          "kind": "fn",
+          "startLine": 10,
+          "endLine": 77,
+          "tokens": 744
+        },
+        {
+          "name": "SearchParams",
+          "kind": "section",
+          "startLine": 78,
+          "endLine": 85,
+          "tokens": 36
+        },
+        {
+          "name": "searchProviders",
+          "kind": "fn",
+          "startLine": 86,
+          "endLine": 157,
+          "tokens": 554
+        }
+      ]
+    },
+    "src/lib/actions/requests.ts": {
+      "description": "API routes: GET (15 endpoints)",
+      "tokens": 3120,
+      "hash": "0e6be696a1b2c29c",
+      "size": 10940,
+      "mtimeMs": 1784869744000,
+      "updatedAt": "2026-07-30T18:53:26.726Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "createServiceRequest",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 83,
+          "tokens": 582
+        },
+        {
+          "name": "closeServiceRequest",
+          "kind": "fn",
+          "startLine": 84,
+          "endLine": 108,
+          "tokens": 174
+        },
+        {
+          "name": "getOpenRequests",
+          "kind": "fn",
+          "startLine": 109,
+          "endLine": 176,
+          "tokens": 744
+        },
+        {
+          "name": "getMyRequests",
+          "kind": "fn",
+          "startLine": 177,
+          "endLine": 226,
+          "tokens": 429
+        },
+        {
+          "name": "getMyRequestsStats",
+          "kind": "fn",
+          "startLine": 227,
+          "endLine": 240,
+          "tokens": 181
+        },
+        {
+          "name": "updateServiceRequest",
+          "kind": "fn",
+          "startLine": 241,
+          "endLine": 282,
+          "tokens": 407
+        },
+        {
+          "name": "deleteServiceRequest",
+          "kind": "fn",
+          "startLine": 283,
+          "endLine": 300,
+          "tokens": 187
+        },
+        {
+          "name": "getRequestById",
+          "kind": "fn",
+          "startLine": 301,
+          "endLine": 316,
+          "tokens": 108
+        }
+      ]
+    },
+    "src/lib/actions/reviews.ts": {
+      "description": "API routes: GET (3 endpoints)",
+      "tokens": 1078,
+      "hash": "db7d0cd21b9b609e",
+      "size": 3785,
+      "mtimeMs": 1785423026435.2285,
+      "updatedAt": "2026-07-30T18:53:26.727Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "submitReview",
+          "kind": "fn",
+          "startLine": 17,
+          "endLine": 90,
+          "tokens": 726
+        },
+        {
+          "name": "getProviderReviews",
+          "kind": "fn",
+          "startLine": 91,
+          "endLine": 101,
+          "tokens": 86
+        },
+        {
+          "name": "getProviderAverageRating",
+          "kind": "fn",
+          "startLine": 102,
+          "endLine": 113,
+          "tokens": 86
+        }
+      ]
+    },
+    "src/lib/actions/subscription.ts": {
+      "description": "Change le plan d'un prestataire (aucun paiement réel intégré ici — ce projet",
+      "tokens": 571,
+      "hash": "cc39eccf6800c311",
+      "size": 2012,
+      "mtimeMs": 1784522888000,
+      "updatedAt": "2026-07-30T18:53:26.728Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "changePlan",
+          "kind": "fn",
+          "startLine": 17,
+          "endLine": 61,
+          "tokens": 406
+        }
+      ]
+    },
+    "src/lib/api/email.ts": {
+      "description": "Envoie un OTP par email.",
+      "tokens": 457,
+      "hash": "df72640e0e70bfb2",
+      "size": 1605,
+      "mtimeMs": 1785145460276.207,
+      "updatedAt": "2026-07-30T18:53:26.729Z",
+      "source": "scan"
+    },
+    "src/lib/api/twilio.ts": {
+      "description": "Client Twilio minimal, en REST direct via `fetch`.",
+      "tokens": 1061,
+      "hash": "57ca7386cb9f7e7e",
+      "size": 3739,
+      "mtimeMs": 1785388554022.3916,
+      "updatedAt": "2026-07-30T18:53:26.730Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "TwilioConfig",
+          "kind": "section",
+          "startLine": 20,
+          "endLine": 27,
+          "tokens": 55
+        },
+        {
+          "name": "getConfig",
+          "kind": "fn",
+          "startLine": 28,
+          "endLine": 41,
+          "tokens": 122
+        },
+        {
+          "name": "otpBody",
+          "kind": "fn",
+          "startLine": 42,
+          "endLine": 45,
+          "tokens": 48
+        },
+        {
+          "name": "TwilioErrorPayload",
+          "kind": "section",
+          "startLine": 46,
+          "endLine": 55,
+          "tokens": 75
+        },
+        {
+          "name": "sendMessage",
+          "kind": "fn",
+          "startLine": 56,
+          "endLine": 85,
+          "tokens": 292
+        },
+        {
+          "name": "sendSmsOTP",
+          "kind": "fn",
+          "startLine": 86,
+          "endLine": 102,
+          "tokens": 133
+        },
+        {
+          "name": "sendWhatsAppOTP",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 118,
+          "tokens": 100
+        }
+      ]
+    },
+    "src/lib/email.ts": {
+      "description": "Exports sendEmail, sendTemplate",
+      "tokens": 1830,
+      "hash": "4928faa63d5a9ed1",
+      "size": 6407,
+      "mtimeMs": 1784007570000,
+      "updatedAt": "2026-07-30T18:53:26.731Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "getTransport",
+          "kind": "fn",
+          "startLine": 6,
+          "endLine": 20,
+          "tokens": 104
+        },
+        {
+          "name": "buildEmail",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 24,
+          "tokens": 40
+        },
+        {
+          "name": "baseTemplate",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 44,
+          "tokens": 250
+        },
+        {
+          "name": "textBlock",
+          "kind": "fn",
+          "startLine": 45,
+          "endLine": 110,
+          "tokens": 1135
+        },
+        {
+          "name": "sendEmail",
+          "kind": "fn",
+          "startLine": 111,
+          "endLine": 129,
+          "tokens": 165
+        },
+        {
+          "name": "sendTemplate",
+          "kind": "fn",
+          "startLine": 130,
+          "endLine": 138,
+          "tokens": 95
+        }
+      ]
+    },
+    "src/lib/geo.ts": {
+      "description": "Exports geocode, haversineKm, bboxAround",
+      "tokens": 392,
+      "hash": "eb6e45119e617fb9",
+      "size": 1371,
+      "mtimeMs": 1783971488000,
+      "updatedAt": "2026-07-30T18:53:26.732Z",
+      "source": "scan"
+    },
+    "src/lib/i18n.ts": {
+      "description": "Exports Lang",
+      "tokens": 10403,
+      "hash": "84b9360114889ca5",
+      "size": 41742,
+      "mtimeMs": 1785423796553.6548,
+      "updatedAt": "2026-07-30T18:53:26.733Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "t",
+          "kind": "fn",
+          "startLine": 464,
+          "endLine": 475,
+          "tokens": 91
+        },
+        {
+          "name": "getDir",
+          "kind": "fn",
+          "startLine": 476,
+          "endLine": 484,
+          "tokens": 89
+        }
+      ]
+    },
+    "src/lib/offer-status.ts": {
+      "description": "Statuts d'offre, partagés entre le client et le serveur.",
+      "tokens": 259,
+      "hash": "12686fdd85547690",
+      "size": 919,
+      "mtimeMs": 1785423016646.0076,
+      "updatedAt": "2026-07-30T18:53:26.734Z",
+      "source": "scan"
+    },
+    "src/lib/plan-limits.ts": {
+      "description": "Exports PLAN_LIMITS, Plan, isUnlimited, monthlyQuotaFor",
+      "tokens": 94,
+      "hash": "5a416b01bc6cb32c",
+      "size": 326,
+      "mtimeMs": 1784522718000,
+      "updatedAt": "2026-07-30T18:53:26.735Z",
+      "source": "scan"
+    },
+    "src/lib/prisma.ts": {
+      "description": "Exports prisma, mediaMimeTypes",
+      "tokens": 296,
+      "hash": "f23ac09979198d01",
+      "size": 1035,
+      "mtimeMs": 1785146151018.2927,
+      "updatedAt": "2026-07-30T18:53:26.736Z",
+      "source": "scan"
+    },
+    "src/lib/require-role.ts": {
+      "description": "Vérifie que l'utilisateur est connecté et possède l'un des rôles autorisés.",
+      "tokens": 196,
+      "hash": "796f1cab8a9edeb1",
+      "size": 694,
+      "mtimeMs": 1784071416000,
+      "updatedAt": "2026-07-30T18:53:26.736Z",
+      "source": "scan"
+    },
+    "src/lib/server-lang.ts": {
+      "description": "API routes: GET (1 endpoints)",
+      "tokens": 57,
+      "hash": "c7e5046b9641d763",
+      "size": 199,
+      "mtimeMs": 1783977594000,
+      "updatedAt": "2026-07-30T18:53:26.737Z",
+      "source": "scan"
+    },
+    "src/lib/utils/otp.ts": {
+      "description": "Utilitaires OTP partagés client / serveur.",
+      "tokens": 790,
+      "hash": "17a8adfc528cc368",
+      "size": 2815,
+      "mtimeMs": 1785360395063.3967,
+      "updatedAt": "2026-07-30T18:53:26.738Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "generateOTP",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 38,
+          "tokens": 160
+        },
+        {
+          "name": "isValidE164",
+          "kind": "fn",
+          "startLine": 39,
+          "endLine": 46,
+          "tokens": 63
+        },
+        {
+          "name": "formatTNPhone",
+          "kind": "fn",
+          "startLine": 47,
+          "endLine": 58,
+          "tokens": 101
+        },
+        {
+          "name": "normalizeE164",
+          "kind": "fn",
+          "startLine": 59,
+          "endLine": 75,
+          "tokens": 176
+        },
+        {
+          "name": "toE164",
+          "kind": "fn",
+          "startLine": 76,
+          "endLine": 81,
+          "tokens": 54
+        }
+      ]
+    },
+    "src/lib/utils/rate-limit.ts": {
+      "description": "Rate-limiter en mémoire.",
+      "tokens": 796,
+      "hash": "093976bd213adc83",
+      "size": 2833,
+      "mtimeMs": 1785360421009.217,
+      "updatedAt": "2026-07-30T18:53:26.739Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "RateLimitEntry",
+          "kind": "section",
+          "startLine": 11,
+          "endLine": 20,
+          "tokens": 90
+        },
+        {
+          "name": "sweep",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 32,
+          "tokens": 81
+        },
+        {
+          "name": "isRateLimited",
+          "kind": "fn",
+          "startLine": 33,
+          "endLine": 65,
+          "tokens": 241
+        },
+        {
+          "name": "otpRateLimitKeys",
+          "kind": "fn",
+          "startLine": 66,
+          "endLine": 76,
+          "tokens": 80
+        },
+        {
+          "name": "isAnyRateLimited",
+          "kind": "fn",
+          "startLine": 77,
+          "endLine": 85,
+          "tokens": 90
+        },
+        {
+          "name": "resetRateLimit",
+          "kind": "fn",
+          "startLine": 86,
+          "endLine": 92,
+          "tokens": 41
+        },
+        {
+          "name": "remainingAttempts",
+          "kind": "fn",
+          "startLine": 93,
+          "endLine": 98,
+          "tokens": 59
+        }
+      ]
+    },
+    "src/lib/utils.ts": {
+      "description": "Exports cn, CATEGORIES, CATEGORIES_AR, TUNISIAN_CITIES + 4 more",
+      "tokens": 499,
+      "hash": "e0a106782e89ae3b",
+      "size": 1936,
+      "mtimeMs": 1784007566000,
+      "updatedAt": "2026-07-30T18:53:26.739Z",
+      "source": "scan"
+    },
+    "src/lib/validations/providerProfile.ts": {
+      "description": "Schéma de validation pour le profil professionnel du prestataire.",
+      "tokens": 420,
+      "hash": "a541db512648aaa7",
+      "size": 1478,
+      "mtimeMs": 1785130996211.0686,
+      "updatedAt": "2026-07-30T18:53:26.741Z",
+      "source": "scan"
+    },
+    "src/proxy.ts": {
+      "description": "Exports config",
+      "tokens": 342,
+      "hash": "8fa305c23c89405d",
+      "size": 1197,
+      "mtimeMs": 1784007538000,
+      "updatedAt": "2026-07-30T18:53:26.742Z",
+      "source": "scan"
+    },
+    "src/types/next-auth.d.ts": {
+      "description": "Declares Session",
+      "tokens": 119,
+      "hash": "53e37cca90c32d1b",
+      "size": 414,
+      "mtimeMs": 1783847698000,
+      "updatedAt": "2026-07-30T18:53:26.742Z",
+      "source": "scan"
+    },
+    "test-results/.last-run.json": {
+      "description": "",
+      "tokens": 13,
+      "hash": "91d1c43004802cd4",
+      "size": 45,
+      "mtimeMs": 1784183762773.6943,
+      "updatedAt": "2026-07-30T18:53:26.743Z",
+      "source": "scan"
+    },
+    "tsconfig.json": {
+      "description": "TypeScript configuration",
+      "tokens": 192,
+      "hash": "5c51df4c59f4510d",
+      "size": 670,
+      "mtimeMs": 1783846840000,
+      "updatedAt": "2026-07-30T18:53:26.743Z",
+      "source": "scan"
+    },
+    "tsconfig.tsbuildinfo": {
+      "description": "",
+      "tokens": 50614,
+      "hash": "383e68d21b3c1ed0",
+      "size": 189800,
+      "mtimeMs": 1785424305284.3987,
+      "updatedAt": "2026-07-30T18:53:26.745Z",
+      "source": "scan"
+    },
+    "vercel.json": {
+      "description": "",
+      "tokens": 51,
+      "hash": "8ae4d87267663558",
+      "size": 177,
+      "mtimeMs": 1783895186000,
+      "updatedAt": "2026-07-30T18:53:26.745Z",
+      "source": "scan"
+    },
+    "vitest.config.ts": {
+      "description": "Vitest test configuration",
+      "tokens": 95,
+      "hash": "12d7283052bf8730",
+      "size": 331,
+      "mtimeMs": 1783975046000,
+      "updatedAt": "2026-07-30T18:53:26.746Z",
+      "source": "scan"
+    }
+  }
+}

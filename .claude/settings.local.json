@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /projet/New folder)",
+      "Bash(npx prisma *)",
+      "Bash(npm test *)",
+      "Bash(npx tsc *)",
+      "Bash(timeout 400 npx next build)",
+      "Bash(npx eslint *)",
+      "Bash(npx vitest *)",
+      "Bash(npx next *)"
+    ]
+  }
+}

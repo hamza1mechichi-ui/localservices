@@ -1,0 +1,194 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id             String    @id @default(cuid())
+  email          String    @unique
+  name           String
+  hashedPassword String
+  role           String    @default("CLIENT") // CLIENT | PROVIDER | ADMIN
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  providerProfile    ProviderProfile?
+  clientRequests     ServiceRequest[]
+  offers             Offer[]
+  subscription       Subscription?
+  reviews            Review[]
+  notifications      Notification[]
+  clientConversations Conversation[]   @relation("ClientConversations")
+  sentMessages       Message[]
+  favorites          FavoriteProvider[] @relation("ClientFavorites")
+}
+
+model ProviderProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  businessName    String
+  category        String   // Electricité, Plomberie, Climatisation, Rénovation, etc.
+  location        String
+  description     String?
+  phone           String?
+  lat             Float?
+  lng             Float?
+  plan            String   @default("FREE") // FREE | STARTER | PRO
+  offerTokens     Int      @default(3)
+  tokensResetAt   DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  offers        Offer[]
+  reviews       Review[]
+  conversations Conversation[]
+  favoritedBy    FavoriteProvider[]
+
+  @@index([category])
+  @@index([location])
+}
+
+model ServiceRequest {
+  id          String   @id @default(cuid())
+  clientId    String
+  client      User     @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  title       String
+  description String
+  category    String
+  location        String
+  estimatedBudget Float?
+  images          String?  // JSON array: ["/uploads/img1.jpg","/uploads/img2.jpg"]
+  audioUrl        String?  // /uploads/xxx.webm - note vocale du client (optionnelle)
+  lat             Float?
+  lng             Float?
+  status          String   @default("OPEN") // OPEN | CLOSED | IN_PROGRESS
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  offers         Offer[]
+  reviews        Review[]
+  conversations Conversation[]
+
+  @@index([status])
+  @@index([category])
+  @@index([location])
+}
+
+model Offer {
+  id              String         @id @default(cuid())
+  providerId      String
+  provider        ProviderProfile @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  clientId        String
+  client          User           @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  serviceRequestId String
+  serviceRequest  ServiceRequest @relation(fields: [serviceRequestId], references: [id], onDelete: Cascade)
+  price           Float
+  message         String
+  status          String         @default("PENDING") // PENDING | ACCEPTED | REJECTED | COMPLETED
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  review Review?
+
+  @@unique([providerId, serviceRequestId])
+  @@index([serviceRequestId])
+  @@index([providerId])
+}
+
+model Subscription {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan      String   @default("FREE") // FREE | STARTER | PRO
+  status    String   @default("ACTIVE") // ACTIVE | CANCELLED
+  startDate DateTime @default(now())
+  endDate   DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Review {
+  id              String        @id @default(cuid())
+  serviceRequestId String
+  serviceRequest  ServiceRequest @relation(fields: [serviceRequestId], references: [id], onDelete: Cascade)
+  providerId      String
+  provider        ProviderProfile @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  clientId        String
+  client          User          @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  offerId         String        @unique
+  offer           Offer         @relation(fields: [offerId], references: [id], onDelete: Cascade)
+  rating          Int           // 1-5
+  comment         String?
+  hidden          Boolean       @default(false)
+  createdAt       DateTime      @default(now())
+
+  @@unique([providerId, serviceRequestId, clientId])
+  @@index([providerId])
+  @@index([serviceRequestId])
+}
+
+model Category {
+  id   String @id @default(cuid())
+  name String @unique
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String   // NEW_OFFER | OFFER_ACCEPTED | OFFER_REJECTED | NEW_REQUEST | REVIEW_RECEIVED | NEW_MESSAGE
+  message   String
+  read      Boolean  @default(false)
+  link      String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, read])
+  @@index([userId, createdAt])
+}
+
+model Conversation {
+  id         String           @id @default(cuid())
+  clientId   String
+  client     User             @relation("ClientConversations", fields: [clientId], references: [id], onDelete: Cascade)
+  providerId String
+  provider   ProviderProfile  @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  requestId  String?
+  request    ServiceRequest?  @relation(fields: [requestId], references: [id], onDelete: SetNull)
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
+
+  messages Message[]
+
+  @@unique([clientId, providerId, requestId])
+  @@index([clientId])
+  @@index([providerId])
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  senderId       String
+  sender         User         @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  content        String
+  read           Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId, createdAt])
+}
+
+model FavoriteProvider {
+  id         String   @id @default(cuid())
+  clientId   String
+  client     User     @relation("ClientFavorites", fields: [clientId], references: [id], onDelete: Cascade)
+  providerId String
+  provider   ProviderProfile @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+
+  @@unique([clientId, providerId])
+  @@index([clientId])
+}

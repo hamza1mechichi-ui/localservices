@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "use-session-not-exported",
+      "date": "2026-07-30",
+      "error_message": "Attempted import error: 'useSession' is not exported from '@/auth'",
+      "root_cause": "src/auth.ts n'exporte que { handlers, signIn, signOut, auth } (NextAuth v5 beta). Les composants admin importaient useSession depuis @/auth comme s'il s'agissait de next-auth/react.",
+      "fix": "Composants admin réécrits en client components recevant leurs données via Server Actions ; la session est lue côté serveur dans src/app/admin/page.tsx.",
+      "files": ["src/auth.ts", "src/app/admin/page.tsx", "src/components/admin/*.tsx"],
+      "tags": ["nextauth", "v5", "build", "import"]
+    },
+    {
+      "id": "set-state-in-effect-lint",
+      "date": "2026-07-30",
+      "error_message": "react-hooks/set-state-in-effect: Avoid calling setState directly inside useEffect",
+      "root_cause": "Les effets de chargement initial appelaient fetchX() qui déclenche setState de façon synchrone, ce que la règle React 19 interdit.",
+      "fix": "Import de startTransition depuis react et enveloppement du corps de l'effet : startTransition(() => { fetchX(); }).",
+      "files": [
+        "src/app/admin/page.tsx",
+        "src/components/admin/Dashboard.tsx",
+        "src/components/admin/DemandManagementTable.tsx",
+        "src/components/admin/SubscriptionPanel.tsx"
+      ],
+      "tags": ["react19", "eslint", "useEffect"]
+    },
+    {
+      "id": "headers-outside-request-scope",
+      "date": "2026-07-30",
+      "error_message": "`headers` was called outside a request scope",
+      "root_cause": "getClientIp() appelait await headers() pour le rate limiting par IP ; sous Vitest il n'y a pas de request scope, ce qui faisait échouer 6 tests OTP.",
+      "fix": "getClientIp() encapsulé dans un try/catch renvoyant null ; le rate limiting retombe alors sur la seule cible.",
+      "files": ["src/lib/actions/otp.ts"],
+      "tags": ["next16", "vitest", "headers", "rate-limit"]
+    },
+    {
+      "id": "i18n-double-brace-interpolation",
+      "date": "2026-07-30",
+      "error_message": "Les libellés OTP affichaient littéralement {{channel}} et {{seconds}}",
+      "root_cause": "Les clés otp.subtitle et otp.countdown utilisaient la syntaxe {{var}} de i18next, alors que le t() custom du projet n'interpole que des accolades simples {var}.",
+      "fix": "Remplacement par {channel} et {seconds} dans src/lib/i18n.ts.",
+      "files": ["src/lib/i18n.ts"],
+      "tags": ["i18n", "interpolation"]
+    },
+    {
+      "id": "formdata-null-zod-message",
+      "date": "2026-07-30",
+      "error_message": "Invalid input: expected string, received undefined (au lieu de « La photo de profil est obligatoire »)",
+      "root_cause": "formData.get() renvoie null pour un champ absent ; le `|| undefined` faisait émettre à Zod son message de type générique en anglais plutôt que le message métier français.",
+      "fix": "Helpers str() (null -> chaîne vide, champs requis) et optionalStr() (null -> undefined, champs optionnels) dans updateProviderProfile.",
+      "files": ["src/lib/actions/profile.ts", "src/__tests__/profile.test.ts"],
+      "tags": ["zod", "formdata", "validation", "ux"]
+    },
+    {
+      "id": "profile-test-outside-vitest-glob",
+      "date": "2026-07-30",
+      "error_message": "Transform failed: unexpected token (src/lib/actions/profile.test.ts:83)",
+      "root_cause": "Apostrophe non échappée dans une chaîne simple quote ; le fichier n'était de toute façon jamais exécuté, le glob Vitest étant src/__tests__/**/*.test.{ts,tsx}. Les assertions visaient en outre une forme {success: 'message'} qui ne correspond pas au type ActionResult.",
+      "fix": "Réécriture dans src/__tests__/profile.test.ts avec import de auth, mocks de @/lib/prisma et next/cache, et assertions conformes à ActionResult. Ancien fichier supprimé.",
+      "files": ["src/__tests__/profile.test.ts"],
+      "tags": ["vitest", "syntax", "test-config"]
+    },
+    {
+      "id": "prisma-hashed-password-field",
+      "date": "2026-07-30",
+      "error_message": "PrismaClientValidationError: Argument `hashedPassword` is missing",
+      "root_cause": "Le test d'intégration créait un User avec un champ `password` ; le modèle Prisma nomme ce champ `hashedPassword`.",
+      "fix": "Utilisation de hashedPassword dans le test.",
+      "files": ["src/__tests__/otp.test.ts"],
+      "tags": ["prisma", "schema", "test"]
+    },
+    {
+      "id": "prisma-migrate-diff-flags-v7",
+      "date": "2026-07-30",
+      "error_message": "unknown or unexpected option: --shadow-database-url / `--to-schema-datamodel` was removed",
+      "root_cause": "Prisma 7 a supprimé --shadow-database-url et renommé --to-schema-datamodel en --to-schema pour migrate diff.",
+      "fix": "npx prisma migrate diff --from-migrations prisma/migrations --to-schema prisma/schema.prisma --script -o <fichier temporaire>, puis copie dans le dossier de migration (l'option -o refuse d'écrire dans un dossier de migration vide, erreur P3015).",
+      "files": ["prisma/migrations/20260730000000_add_otp_phone_and_admin_fields/migration.sql"],
+      "tags": ["prisma7", "cli", "migration"]
+    },
+    {
+      "id": "migrations-never-recorded",
+      "date": "2026-07-30",
+      "error_message": "Following migrations have not yet been applied: 20260712100450_init, 20260712232050_add_reviews_notifications",
+      "root_cause": "La base dev.db avait été construite par `prisma db push` : la table _prisma_migrations ne contenait aucun enregistrement bien que le schéma soit à jour.",
+      "fix": "npx prisma migrate resolve --applied <nom> sur les trois migrations (baseline). migrate status renvoie désormais « Database schema is up to date! ».",
+      "files": ["prisma/migrations/"],
+      "tags": ["prisma", "migration", "baseline", "drift"]
+    },
+    {
+      "id": "env-example-missing-nextauth-url",
+      "date": "2026-07-30",
+      "error_message": "robots.txt et sitemap.xml pointaient sur http://localhost:3000 en production",
+      "root_cause": "src/app/robots.ts et sitemap.ts lisent process.env.NEXTAUTH_URL, variable absente de .env.example ; le README documentait par ailleurs CRON_SECRET, que plus aucun code ne lit (l'endpoint attend RESET_SECRET).",
+      "fix": "NEXTAUTH_URL ajouté à .env.example ; section Déploiement du README corrigée (AUTH_SECRET, NEXTAUTH_URL, NEXT_PUBLIC_URL requis ; RESET_SECRET optionnel).",
+      "files": [".env.example", "README.md"],
+      "tags": ["env", "seo", "documentation"]
+    },
+    {
+      "id": "review-status-deadlock",
+      "date": "2026-07-30",
+      "error_message": "Vous ne pouvez noter qu'une offre acceptée",
+      "root_cause": "Contradiction UI/serveur : src/app/dashboard/client/page.tsx n'affichait le formulaire d'avis que si offer.status === 'COMPLETED', alors que submitReview refusait tout statut différent de 'ACCEPTED'. Les deux conditions étant disjointes, le dépôt d'avis était impossible dans tous les cas — pas seulement dégradé. markOfferCompleted passe pourtant l'offre en COMPLETED et notifie le client « N'oubliez pas de laisser un avis ! ».",
+      "fix": "Création de src/lib/offer-status.ts (source de vérité partagée client/serveur) exposant REVIEWABLE_OFFER_STATUSES = ['ACCEPTED','COMPLETED'] et canReviewOffer(). L'UI appelle canReviewOffer(offer.status), la Server Action teste REVIEWABLE_OFFER_STATUSES.includes(). Libellé adapté au statut (nouvelle clé i18n dash.client.reviewInvite). Test de non-régression src/__tests__/offer-status.test.ts.",
+      "files": [
+        "src/lib/offer-status.ts",
+        "src/lib/actions/reviews.ts",
+        "src/app/dashboard/client/page.tsx",
+        "src/lib/i18n.ts",
+        "src/__tests__/offer-status.test.ts"
+      ],
+      "tags": ["logique-metier", "ux", "statut", "avis", "ui-serveur-divergence"]
+    },
+    {
+      "id": "phone-required-for-clients",
+      "date": "2026-07-30",
+      "error_message": "Un client ne pouvait pas s'inscrire sans renseigner un numéro de téléphone au format international",
+      "root_cause": "RegisterForm.tsx affichait le champ téléphone pour les deux rôles et registerSchema le validait de façon uniforme. Or seul un prestataire a besoin d'être joignable : le champ était du bruit pour un client, et le rejet E.164 bloquait la soumission.",
+      "fix": "Champ téléphone déplacé dans le bloc `{role === 'PROVIDER' && ...}` (input, label et texte d'aide masqués pour un client), classes Tailwind inchangées. Validation Zod passée en .superRefine() : obligatoire + isValidE164 uniquement si role === 'PROVIDER'. register() force phone = null pour un CLIENT, l'UI ne pouvant pas servir de garde-fou (phone est @unique, une requête forgée réserverait un numéro). Bascule d'onglet vers CLIENT : setPhone('') pour ne pas envoyer une saisie résiduelle.",
+      "files": [
+        "src/components/RegisterForm.tsx",
+        "src/lib/actions/auth.ts",
+        "src/lib/i18n.ts",
+        "src/__tests__/register-phone.test.ts",
+        "e2e/otp.spec.ts",
+        "e2e/basic.spec.ts"
+      ],
+      "tags": ["formulaire", "zod", "validation-conditionnelle", "ux", "inscription"]
+    },
+    {
+      "id": "e2e-fills-conditional-phone-input",
+      "date": "2026-07-30",
+      "error_message": "page.fill('input[name=\"phone\"]') — Timeout: element not found (régression introduite par le champ conditionnel)",
+      "root_cause": "e2e/otp.spec.ts remplissait le téléphone sans sélectionner l'onglet Prestataire ; l'input n'est plus rendu pour le rôle Client. Deux pièges secondaires : LocationPicker n'expose pas d'attribut `name`, et un prestataire est redirigé vers /dashboard/prestataire et non /dashboard/client.",
+      "fix": "Helper fillProviderForm() qui clique l'onglet « Prestataire » puis remplit businessName / category / ville (ciblée par placeholder). Redirection attendue corrigée. Deux tests ajoutés : visibilité conditionnelle du champ, blocage d'un prestataire sans numéro.",
+      "files": ["e2e/otp.spec.ts", "e2e/basic.spec.ts"],
+      "tags": ["playwright", "e2e", "regression", "selecteur"]
+    }
+  ]
+}
